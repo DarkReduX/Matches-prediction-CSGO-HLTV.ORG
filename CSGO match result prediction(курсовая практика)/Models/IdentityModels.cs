@@ -20,6 +20,10 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<MatchInfo> MatchesInfo { get; set; }
+        public DbSet<TeamInfo> TeamsInfo { get; set; }
+        public DbSet<TeamMapStats> TeamMapStats { get; set; }
+        public DbSet<MatchNotLoaded> MatchesNotLoaded { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
