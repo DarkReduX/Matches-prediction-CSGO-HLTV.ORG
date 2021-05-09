@@ -24,6 +24,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         public DbSet<TeamInfo> TeamsInfo { get; set; }
         public DbSet<TeamMapStats> TeamMapStats { get; set; }
         public DbSet<MatchNotLoaded> MatchesNotLoaded { get; set; }
+        public DbSet<MatchResult> MatchResults { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

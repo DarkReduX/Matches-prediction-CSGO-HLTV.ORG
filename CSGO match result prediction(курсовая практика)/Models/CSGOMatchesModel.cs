@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -12,8 +13,22 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         public string MatchUrl { get; set; }
         public string EventName { get; set; }
         public string LogoUrl { get; set; }
-        public DateTime DateTime { get; set; }
-        public List<TeamInfo> TeamsInfo { get; set; } = new List<TeamInfo>();
+        public DateTime StartTime { get; set; }
+        public ICollection<TeamInfo> TeamsInfo { get; set; }
+        public string MatchFormat { get; set; }
+        
+        public TeamInfo Prediction { get; set; }
+        public MatchResult Result { get; set; }
+    }
+    public class MatchResult
+    {
+        [Key]
+        [ForeignKey("MatchInfo")]
+        public string MatchInfoId { get; set; }
+        public MatchInfo MatchInfo { get; set; }
+        public TeamInfo Winner { get; set; }
+        public TeamInfo Loser { get; set; }
+        public string MapScore { get; set; }
     }
     public class TeamInfo
     {
@@ -31,7 +46,6 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         [Key]
         public int Id { get; set; }
         public string MapName { get; set; }
-        public string TeamInfoId { get; set; }
         public TeamInfo TeamInfo { get; set; }
         public int MapPlayed { get; set; }
         public int WinPercentage { get; set; }
