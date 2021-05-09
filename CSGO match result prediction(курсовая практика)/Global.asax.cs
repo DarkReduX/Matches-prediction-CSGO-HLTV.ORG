@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSGO_match_result_prediction_курсовая_практика_.Jobs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,8 @@ namespace CSGO_match_result_prediction_курсовая_практика_
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            ParserSheduler.Start();
         }
     }
 }
