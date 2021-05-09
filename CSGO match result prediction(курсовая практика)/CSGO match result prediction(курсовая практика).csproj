@@ -203,9 +203,26 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Jobs\Parser.cs" />
+    <Compile Include="Jobs\ParserSheduler.cs" />
     <Compile Include="Migrations\202105072102160_AddMatchInfo.cs" />
     <Compile Include="Migrations\202105072102160_AddMatchInfo.Designer.cs">
       <DependentUpon>202105072102160_AddMatchInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105081026011_AddNotLoadedMatches.cs" />
+    <Compile Include="Migrations\202105081026011_AddNotLoadedMatches.Designer.cs">
+      <DependentUpon>202105081026011_AddNotLoadedMatches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105081529087_FK_TeamMapStats.cs" />
+    <Compile Include="Migrations\202105081529087_FK_TeamMapStats.Designer.cs">
+      <DependentUpon>202105081529087_FK_TeamMapStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105091338317_NotLoadedMatches_and_Results.cs" />
+    <Compile Include="Migrations\202105091338317_NotLoadedMatches_and_Results.Designer.cs">
+      <DependentUpon>202105091338317_NotLoadedMatches_and_Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105091536365_update.cs" />
+    <Compile Include="Migrations\202105091536365_update.Designer.cs">
+      <DependentUpon>202105091536365_update.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -291,6 +308,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105072102160_AddMatchInfo.resx">
       <DependentUpon>202105072102160_AddMatchInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105081026011_AddNotLoadedMatches.resx">
+      <DependentUpon>202105081026011_AddNotLoadedMatches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105081529087_FK_TeamMapStats.resx">
+      <DependentUpon>202105081529087_FK_TeamMapStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105091338317_NotLoadedMatches_and_Results.resx">
+      <DependentUpon>202105091338317_NotLoadedMatches_and_Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105091536365_update.resx">
+      <DependentUpon>202105091536365_update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

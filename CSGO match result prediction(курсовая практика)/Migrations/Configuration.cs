@@ -9,7 +9,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Migrat
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(CSGO_match_result_prediction_курсовая_практика_.Models.ApplicationDbContext context)
