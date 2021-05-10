@@ -10,6 +10,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
     public class MatchInfo
     {
         [Key]
+        public Guid Id { get; set; }
         public string MatchUrl { get; set; }
         public string EventName { get; set; }
         public string LogoUrl { get; set; }
@@ -24,7 +25,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
     {
         [Key]
         [ForeignKey("MatchInfo")]
-        public string MatchInfoId { get; set; }
+        public Guid MatchInfoId { get; set; }
         public MatchInfo MatchInfo { get; set; }
         public TeamInfo Winner { get; set; }
         public TeamInfo Loser { get; set; }

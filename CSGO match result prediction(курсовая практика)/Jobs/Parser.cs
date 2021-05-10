@@ -54,7 +54,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
             foreach (var item in upcomingMatchesList)
             {
 
-                if (counter > 15)
+                if (counter > 20)
                     break;
                 counter++;
                 var itemEvent = item.GetElementsByClassName("matchEventName ")
@@ -103,6 +103,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                         };
                     MatchInfo match = new MatchInfo
                     {
+                        Id = Guid.NewGuid(),
                         EventName = EventName.Trim(),
                         MatchUrl = itemMatchUrl,
                         LogoUrl = itemLogos[2].GetAttribute("src"),
@@ -126,7 +127,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                 }
 
             }
-            await db.SaveChangesAsync();
+            db.SaveChanges();
             return matchInfos;
         }
 
@@ -215,7 +216,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                 }
             }
         }
-        public async Task<TeamInfo> PredictMatch(MatchInfo match)
+        public Task<TeamInfo> PredictMatch(MatchInfo match)
         {
             TeamInfo team1, team2;
             double team1_chance = 0, team2_chance = 0;
