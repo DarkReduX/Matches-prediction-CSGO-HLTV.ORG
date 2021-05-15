@@ -11,9 +11,11 @@
         <div class="page active_page images_active">-->
 @foreach (var item in Model)
 {
+    var startTimeFormatted = item.StartTime.Date == DateTime.Today ? item.StartTime.ToString("HH:mm:ss") : item.StartTime.ToString("dd.MM.yyyy");
+
 
     var team_predicted = item.Prediction.Id == item.TeamsInfo.ToList()[0].Id ? "bet_1" : "bet_2";
- 
+
     <div class="event csgo_event @team_predicted" data-app_id="730" data-id="95601">
         <div class="event_cont">
             <a href="" data-raw_id="684" class="left m_open">
@@ -30,7 +32,7 @@
                 <span class="event_name">@item.EventName</span>
                 <span class="event_type">@item.MatchFormat</span>
                 <span class="timer timer_active"
-                      data-start="05/13/2021 17:30:00">@item.StartTime.ToString("dd:MM:yyyy")</span>
+                      data-start="05/13/2021 17:30:00">@startTimeFormatted</span>
                     <span class="event_map">@item.MatchFormat</span>
                 </div>
                 <a href="https://positive.bet/#register" data-raw_id="737" class="right m_open">
