@@ -22,3 +22,378 @@ select,
 textarea {
     max-width: 280px;
 }
+/*matches style*/
+/*
+.team_logo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 7%;
+    z-index: 1;
+    align-self: center;
+}
+
+.event_cont {
+    position: relative;
+    overflow: hidden;
+    background: #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+    .event_cont .left {
+        position: relative;
+        width: 37% !important;
+        max-width: 37% !important;
+        margin: 4px;
+        padding: 0;
+        height: 60px;
+        transition: all .3s ease;
+        border-radius: 3px;
+        text-decoration: none;
+        float: left;
+        text-align: right;
+    }
+
+    .event_cont .right {
+        position: relative;
+        width: 37% !important;
+        max-width: 37% !important;
+        margin: 4px;
+        padding: 0;
+        height: 60px;
+        transition: all .3s ease;
+        border-radius: 3px;
+        text-decoration: none;
+        float: right;
+        text-align: left;
+    }
+
+.left .team_logo {
+    margin-left: 10px;
+    float: right;
+}
+
+.event_cont .team_logo {
+    overflow: hidden;
+    background: #2a2f36;
+    border-radius: 4px;
+    width: 60px;
+    height: 0;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.event_cont .team_name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    display: block;
+    vertical-align: top;
+    line-height: 23px;
+    float: none;
+    text-align: right;
+    font-size: 14px;
+    color: #000000;
+    padding: 0 2px;
+    margin-top: 5px;
+}
+
+.event_cont .right .team_name {
+    text-align: left;
+    display: inline;
+}
+
+.center {
+    text-align: center;
+    width: 22%;
+    position: absolute;
+    left: 50%;
+    margin-left: -11%;
+    top: 0;
+    padding: 7px 0;
+    height: 68px !important;
+    box-sizing: border-box;
+}
+
+    .center .event_name {
+        cursor: default;
+        font-size: 12px !important;
+        line-height: 18px !important;
+        height: 18px;
+        display: block;
+        color: #b0b3b9;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .center .event_type {
+        cursor: default;
+        font-weight: 700;
+        display: block;
+        font-size: 12px;
+        color: #7d7f85;
+        line-height: 18px;
+        height: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.predicted {
+    background-color: #5f864a;
+}*/
+
+/*
+    div.event_cont.win .team_logo::after img.predicted {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    background: url(../img/betted.png) no-repeat left top;
+    background-size: auto;
+    background-size: 12px 12px !important;
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.event_cont::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.event_cont.win::before {
+    background: #3e553c url(../img/bet_icons.png) no-repeat left center !important;
+}
+
+.event_cont.lose::before {
+    background: #5a3532 url(../img/bet_icons.png) no-repeat right center !important;
+}
+
+.bets_stats {
+    margin: 0 2% 10px;
+    background: #d9d9d9;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.big_column_stat {
+    position: relative;
+    float: left;
+}
+
+    .big_column_stat:nth-child(1) {
+        width: 7%;
+        line-height: 60px;
+        color: #7d7f85;
+        font-size: 13px;
+        text-transform: uppercase;
+        cursor: default;
+        font-weight: 700;
+    }
+
+        .big_column_stat:nth-child(1)::before {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            vertical-align: top;
+            height: 58px;
+            margin-right: 5px;
+            background: url(../img/menu_ico.png) no-repeat center center;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: auto;
+            background-position: -36px center;
+            background-size: 162px 18px;
+        }
+
+    .big_column_stat:nth-child(2) {
+        width: 93%;
+        display: table;
+    }
+
+.stat_column {
+    cursor: default;
+    width: 33%;
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+}
+
+    .stat_column > span {
+        cursor: default;
+        display: inline-block;
+        text-align: left;
+        line-height: 23px;
+        font-size: 10px;
+        font-weight: 700;
+        color: #7d7f85;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .stat_column:nth-child(1) span:first-child::before {
+        content: '';
+        width: 14px;
+        height: 22px;
+        background: url(../img/bets_ico.png) no-repeat left center;
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: top;
+    }
+
+    .stat_column > span > b {
+        font-size: 15px;
+        font-weight: 700;
+        color: #707174;
+        margin-right: 10px;
+        vertical-align: top;
+        line-height: 22px;
+        display: inline-block;
+    }
+
+    .stat_column .c100 {
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+    }
+
+.c100.smallest {
+    font-size: 34px;
+}
+
+.c100 {
+    margin: 15px 20px 0 0;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #914034;
+    display: inline-block;
+}
+
+    .c100.p45 .bar {
+        -webkit-transform: rotate(162deg);
+        -moz-transform: rotate(162deg);
+        -ms-transform: rotate(162deg);
+        -o-transform: rotate(162deg);
+        transform: rotate(162deg);
+    }
+    .c100 .bar {
+        position: absolute;
+        border: .08em solid #6bab44;
+        width: 100%;
+        height: 100%;
+        clip: rect(0em,0.5em,1em,0em);
+        border-radius: 50%;
+    }
+
+    .c100::after {
+        position: absolute;
+        top: .08em;
+        left: .08em;
+        display: block;
+        content: " ";
+        border-radius: 50%;
+        background-color: #2b3038;
+        width: 85%;
+        height: 87%;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .2s;
+        -moz-transition-duration: .2s;
+        -o-transition-duration: .2s;
+        transition-duration: .2s;
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+.stat_column:nth-child(3) span:first-child::before {
+    content: '';
+    width: 14px;
+    height: 22px;
+    background: url(../img/bets_ico.png) no-repeat right center;
+    display: inline-block;
+    margin-right: 8px;
+    padding-top: 5px;
+    vertical-align: top;
+}
+/*hltv.org stats styles*/
+/*
+.teamProfile .map-statistics-container {
+    transition: .2s ease;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.teamProfile .map-statistics-row {
+    display: flex;
+    justify-content: space-between;
+    transition: .2s ease;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.teamProfile .map-statistics-row-map {
+    position: relative;
+    padding-bottom: 3.9%;
+    height: 0;
+    max-width: 229px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.05);
+}
+
+    .teamProfile .map-statistics-row-map img {
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+    }
+
+    .teamProfile .map-statistics-row-map div {
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+        font-size: 13px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+.teamProfile .map-statistics-row-win-percentage {
+    font-weight: 700;
+}
+*/
+
+.event *:after, .event *:before {
+    -webkit-box-sizing: unset !important;
+    box-sizing: unset !important;
+}
+
+.event *{
+    -webkit-box-sizing: unset!important;
+    box-sizing: content-box;
+}
+
+#full_container * {
+    -webkit-box-sizing: unset !important;
+    box-sizing: content-box;
+}

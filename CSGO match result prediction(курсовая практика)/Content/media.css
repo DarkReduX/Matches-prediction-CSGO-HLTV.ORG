@@ -1,0 +1,4555 @@
+﻿.show-tablet,
+.show-mob,
+.sidebar.f_left.show-tabl {
+    display: none !important
+}
+
+#menu_btn_stick {
+    display: none
+}
+
+.wrapper,
+#header {
+    min-width: 313.6px !important
+}
+
+@media screen and (max-width:1024px) {
+    .hot .event_cont:before {
+        color: rgba(42, 47, 54, .31) !important
+    }
+
+    .hot .event_cont {
+        background: #343a45 !important
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #deposit_tab .payout_type.small a {
+        font-size: 0 !important;
+        text-align: center;
+        padding: 0;
+        height: 50px;
+        display: block
+    }
+
+    #deposit_tab .payout_type.small b {
+        display: none !important
+    }
+
+    #deposit_tab .payout_type.small a > i {
+        margin: 5px;
+        -webkit-background-size: 30px 30px !important;
+        background-size: 30px !important;
+        width: 40px;
+        height: 40px
+    }
+
+    #deposit_tab .payout_type.small {
+        position: relative;
+        width: 300px
+    }
+
+    .against_stat .team_stat:first-child {
+        margin-bottom: 18px
+    }
+}
+
+@media screen and (min-width:1051px) and (max-width:1250px) {
+    #deposit_tab .payout_type.small {
+        position: relative
+    }
+
+        #deposit_tab .payout_type.small:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 70px;
+            height: 100%;
+            top: 0;
+            right: -15px;
+            background: url(../img/fade_pays.png) repeat-y right top
+        }
+
+        #deposit_tab .payout_type.small a {
+            font-size: 13px;
+            word-break: break-all
+        }
+
+        #deposit_tab .payout_type.small b {
+            display: none !important
+        }
+}
+
+@media(max-width:1023px) and (min-width:881px) {
+    .e_date {
+        height: 35px !important
+    }
+
+    #letter_count {
+        display: none
+    }
+
+    #teams_list > div > a {
+        width: 19%;
+        margin-right: 1.25%
+    }
+
+        #teams_list > div > a:nth-child(6n+6) {
+            margin-right: 1.25%
+        }
+
+        #teams_list > div > a:nth-child(5n+5) {
+            margin-right: 0
+        }
+}
+
+@media(max-width:600px) and (min-width:500px) {
+    .bot_tabs a {
+        width: 25%
+    }
+}
+
+@media(max-width:500px) and (min-width:350px) {
+    .bot_tabs a {
+        width: 33%
+    }
+}
+
+@media(max-width:340px) {
+    .g-recaptcha {
+        width: 100%;
+        position: relative;
+        height: 88px
+    }
+
+        .g-recaptcha > div {
+            width: 304px !important;
+            height: 78px;
+            transform: scale(.95);
+            position: absolute;
+            left: 50%;
+            margin-left: -152px
+        }
+}
+
+@media(max-width:350px) {
+    .select_two_desc {
+        font-size: 12px !important
+    }
+
+    .bet_content .bet {
+        font-size: 12px !important
+    }
+
+    .bot_tabs a {
+        width: 50%
+    }
+}
+
+@media(min-width:551px) and (max-width:1023px) {
+    #logo .title {
+        font-size: 18px
+    }
+}
+
+@media(min-width:481px) and (max-width:550px) {
+    #header #menu_btn {
+        margin-left: 0 !important
+    }
+
+    #logo .title {
+        font-size: 29px;
+        line-height: 18px
+    }
+}
+
+@media(max-width:880px) and (min-width:551px) {
+    #teams_list > div > a {
+        width: 24%;
+        margin-right: 1.33% !important;
+        margin-bottom: 15px
+    }
+
+        #teams_list > div > a:nth-child(4n+4) {
+            margin-right: 0 !important
+        }
+}
+
+@media(max-width:370px) {
+    #header #menu_btn {
+        margin-left: 0 !important
+    }
+
+    #header .right_user .user_image {
+        margin-right: 0 !important
+    }
+}
+
+@media(max-width:480px) and (min-width:371px) {
+    .right_user .bottom {
+        display: block !important
+    }
+}
+
+@media(max-width:550px) and (min-width:481px) {
+    .lang_RU .bet_content .bet .koef {
+        right: 100px;
+        font-size: 12px;
+        left: auto !important;
+        width: 50px
+    }
+
+    .lang_RU .select_two .koef {
+        right: 90px !important
+    }
+
+    .lang_RU .select_two_desc {
+        right: 155px !important;
+        font-weight: 400
+    }
+
+    .lang_EN .bet_content .bet .koef,
+    .lang_CN .bet_content .bet .koef {
+        right: 80px;
+        font-size: 12px;
+        left: auto !important;
+        width: 50px
+    }
+
+    .lang_EN .select_two .koef,
+    .lang_CN .select_two .koef {
+        right: 70px
+    }
+
+    .lang_EN .select_two_desc,
+    .lang_CN .select_two_desc {
+        right: 135px !important
+    }
+
+    .bet_content .bet,
+    .select_two_desc {
+        font-size: 13px
+    }
+
+    .right_user .user_image {
+        margin-right: 0 !important
+    }
+
+    #teams_list > div > a {
+        width: 32.4% !important;
+        margin-right: 1.4% !important;
+        margin-bottom: 15px
+    }
+
+        #teams_list > div > a:nth-child(3n+3) {
+            margin-right: 0 !important
+        }
+}
+
+@media(max-width:880px) and (min-width:601px) {
+    .express_item > div > .express_bet_block .right > a {
+        margin-left: 25px !important
+    }
+
+    .express_item > div > .express_bet_block .left > a {
+        margin-right: 25px !important
+    }
+
+    .additional_bets_express .express_bet_block .left > a {
+        margin-right: 15px !important
+    }
+
+    .additional_bets_express .express_bet_block .right > a {
+        margin-left: 15px !important
+    }
+
+    .express_bet_side:before {
+        margin: 0 !important;
+        position: absolute;
+        left: 10px;
+        top: 7px;
+        width: 20px !important;
+        height: 20px !important
+    }
+
+    .express_bet_block .left {
+        padding-left: 55px;
+        box-sizing: border-box
+    }
+
+    .express_bet_block .right {
+        padding-right: 15px;
+        box-sizing: border-box
+    }
+}
+
+@media(max-width:750px) {
+    #notifications {
+        bottom: 60px !important
+    }
+}
+
+@media(max-width:600px) {
+    #banner .team_right .team_name:after {
+        left: 0 !important
+    }
+
+    #banner .team_left .team_name:after {
+        right: 0 !important
+    }
+
+    #banner .team_right,
+    #banner .team_left {
+        width: 34% !important
+    }
+
+        #banner .team_left > .team_name {
+            font-size: 17px !important;
+            right: 18px !important;
+            top: 21px !important;
+            padding-left: 0 !important
+        }
+
+        #banner .team_right > .team_name {
+            font-size: 17px !important;
+            left: 18px !important;
+            top: 21px !important;
+            padding-left: 0 !important
+        }
+
+        #banner .team_right.hover > img,
+        #banner .team_left.hover > img {
+            max-width: 35px !important;
+            height: 35px !important;
+            top: 17% !important;
+            margin: 0 !important
+        }
+
+        #banner .team_right > img,
+        #banner .team_left > img {
+            min-width: 35px;
+            max-width: 35px !important;
+            height: 35px !important;
+            top: 17%;
+            background: 0 0;
+            box-shadow: none !important
+        }
+
+    .express_item > div > .express_bet_block .left > a {
+        margin-right: 21px !important
+    }
+
+    .express_item > div > .express_bet_block .right > a {
+        margin-left: 21px !important
+    }
+
+    .express_bet_block .left > a,
+    .express_bet_block .right > a {
+        min-width: 28px !important
+    }
+
+    #express_modal .koef_check {
+        float: none
+    }
+
+    #express_list_confirm > div {
+        height: auto
+    }
+
+        #express_list_confirm > div b {
+            max-width: 100%;
+            display: inline
+        }
+
+    #express_list_confirm > div {
+        font-size: 11px;
+        padding-left: 35px
+    }
+
+    .express_bet_block .right > img {
+        left: 74px
+    }
+
+    .express_bet_block .left > img {
+        right: 74px
+    }
+
+    .express_bet_block .left > img,
+    .express_bet_block .right > img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -18px
+    }
+
+    .express_item > div > .express_bet_block > div {
+        overflow: visible !important;
+        position: relative;
+        font-size: 10px
+    }
+
+    .express_bet_side:before {
+        margin: 0 !important;
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        width: 15px !important;
+        height: 15px !important
+    }
+}
+
+@media(max-width:380px) {
+    #mybets .tabs a > i {
+        display: none !important
+    }
+}
+
+@media(max-width:480px) {
+    #logo .title {
+        font-size: 25px;
+        line-height: 17px
+    }
+
+    .game_filter {
+        transition: opacity .1s ease, transform .6s ease
+    }
+
+    .hide_mobile480 {
+        display: none !important
+    }
+
+    .only_mobile480 {
+        display: block !important
+    }
+
+    .event_notification_v2 {
+        min-width: 310px
+    }
+
+        .event_notification_v2 .not_v2 > div:nth-child(2) > div img {
+            max-width: 100%;
+            margin: 5px 0 !important
+        }
+
+        .event_notification_v2 .not_v2 > div:nth-child(2) > div:nth-child(2) {
+            width: 70%;
+            position: absolute;
+            left: 50%;
+            margin-left: -35%
+        }
+
+        .event_notification_v2 .not_v2 > div:nth-child(2) > div:first-child,
+        .event_notification_v2 .not_v2 > div:nth-child(2) > div:last-child {
+            width: 15%;
+            min-width: 45px;
+            text-align: center
+        }
+
+    .notification {
+        box-sizing: border-box;
+        width: 99% !important;
+        margin: 0 .5% 3px
+    }
+
+    #notifications {
+        width: 98%;
+        left: 1%
+    }
+
+    #mybets .history tbody td:nth-child(3),
+    #mybets .history tbody td:nth-child(4),
+    #mybets .history tbody td:nth-child(5),
+    #mybets .history tbody td:nth-child(6) {
+        font-size: 11px
+    }
+
+    .additional_bets_express .express_bet_block {
+        position: relative
+    }
+
+    .additional_bets_express .right a {
+        position: absolute;
+        left: 50%;
+        top: 28px;
+        margin: 0 auto 0 10px !important
+    }
+
+    .additional_bets_express .left a {
+        position: absolute;
+        right: 50%;
+        top: 28px;
+        margin: 0 10px 0 auto !important
+    }
+
+    .additional_bets_express .left {
+        width: 100%;
+        text-align: center;
+        line-height: 33px;
+        font-size: 11px;
+        padding-bottom: 19px;
+        font-weight: 700
+    }
+
+    .additional_bets_express .right {
+        width: 0
+    }
+
+    .additional_bets_express .express_bet_block .left > a {
+        margin-right: 5px
+    }
+
+    .additional_bets_express .express_bet_block .right > a {
+        margin-left: 5px
+    }
+
+    .lang_RU .express_bet_block.y_n .left > a.can_place:before {
+        content: 'Да - '
+    }
+
+    .lang_RU .express_bet_block.y_n .right > a.can_place:before {
+        content: 'Нет - ';
+        width: 25px !important
+    }
+
+    .lang_EN .express_bet_block.y_n .left > a.can_place:before,
+    .lang_CN .express_bet_block.y_n .left > a.can_place:before {
+        content: 'Yes - ';
+        width: 25px !important
+    }
+
+    .lang_EN .express_bet_block.y_n .right > a.can_place:before,
+    .lang_CN .express_bet_block.y_n .right > a.can_place:before {
+        content: 'No - '
+    }
+
+    .express_bet_block.y_n a.can_place:before {
+        display: inline-block !important;
+        font-size: 11px;
+        text-decoration: none;
+        background: 0 0 !important;
+        width: 22px
+    }
+
+    .express_bet_block .left > a:before,
+    .express_bet_block .right > a:before {
+        display: none !important
+    }
+
+    .additional_bets_express .right {
+        font-size: 0 !important
+    }
+
+    .express_bet_block > div {
+        font-size: 10px
+    }
+
+    .game_filter.detached {
+        z-index: 100000
+    }
+
+    .game_filter {
+        max-width: 150px;
+        min-width: 0;
+        width: 44%;
+        height: 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .4)
+    }
+
+        .game_filter.opened .dropdown {
+            bottom: 55px;
+            top: auto
+        }
+
+        .game_filter .dropdown {
+            bottom: 55px;
+            top: auto
+        }
+
+    .game_filter {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0;
+        z-index: 100
+    }
+
+    #teams_list > div > a {
+        width: 49%;
+        margin-right: 2% !important
+    }
+
+        #teams_list > div > a:nth-child(2n+2) {
+            margin-right: 0 !important
+        }
+
+    .additional_bets_express .different_mobile .right {
+        text-align: left;
+        vertical-align: top
+    }
+
+    .additional_bets_express .different_mobile .left {
+        text-align: right;
+        vertical-align: top
+    }
+
+    .additional_bets_express .different_mobile .right,
+    .additional_bets_express .different_mobile .left {
+        font-size: 12px !important;
+        width: 50% !important;
+        display: block;
+        padding: 0;
+        line-height: 24px !Important;
+        font-weight: 700
+    }
+
+        .additional_bets_express .different_mobile .right a,
+        .additional_bets_express .different_mobile .left a {
+            position: initial;
+            left: auto !important;
+            top: auto !important;
+            margin: 0 10px 10px !important;
+            vertical-align: top
+        }
+
+    .express_bet_header_mobile {
+        width: 100% !important;
+        text-align: center;
+        font-size: 11px !important;
+        font-weight: 700
+    }
+
+    .force_dir {
+        direction: ltr !important;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 24px;
+        font-weight: 700;
+        font-size: 13px
+    }
+}
+
+@media(max-width:1100px) {
+    #banner .navi {
+        display: none !important
+    }
+}
+
+@media(max-width:1023px) {
+    #banner .team_right,
+    #banner .team_left {
+        width: 37%
+    }
+
+    .against_stat .team_stat {
+        width: 50% !important;
+        display: inline-block !important;
+        vertical-align: top;
+        margin-bottom: 0 !important
+    }
+
+    .team_stat > span b {
+        font-size: 13px
+    }
+
+    .only_desktop,
+    #search_result {
+        display: none !important
+    }
+
+    .express_icon_small {
+    }
+
+    .profile_settings #mybets .history tbody td:last-child {
+        padding: 0 !important;
+        display: inline
+    }
+
+    .profile_settings .history tbody td:last-child i {
+        position: absolute;
+        right: 10px;
+        top: 18px
+    }
+
+    .bet_profile_sum {
+        position: absolute;
+        right: 25px;
+        top: 18px;
+        text-align: right
+    }
+
+    .profile_settings .history tbody tr {
+        position: relative;
+        display: block;
+        box-sizing: border-box
+    }
+
+    .profile_settings #mybets .history tbody td:nth-child(2) {
+        width: -webkit-calc(100% - 97px);
+        width: calc(100% - 97px);
+        box-sizing: border-box
+    }
+
+    .profile_settings #mybets .history tbody td {
+        border: 0 !important
+    }
+
+        .profile_settings #mybets .history tbody td:nth-child(1n+3):before {
+            display: none !important
+        }
+
+    .history tbody td:first-child:before {
+        display: none
+    }
+
+    .e_date {
+        margin-bottom: 10px;
+        line-height: 16px;
+        height: 32px;
+        padding-bottom: 5px;
+        padding-top: 0;
+        border-bottom: 2px solid #2a2f36
+    }
+
+    #mybets .history tbody td:first-child i {
+        margin-top: 2px;
+        margin-right: 5px;
+        height: 12px;
+        width: 12px;
+        margin-bottom: 10px;
+        background-position: center center !important
+    }
+
+    .lang_RU #mybets .history tbody td:nth-child(3):before {
+        content: 'Сумма'
+    }
+
+    .lang_EN #mybets .history tbody td:nth-child(3):before {
+        content: 'Sum'
+    }
+
+    .lang_CN #mybets .history tbody td:nth-child(3):before {
+        content: '总额'
+    }
+
+    .lang_RU #mybets .history tbody td:nth-child(4):before {
+        content: 'Коэф.' !important
+    }
+
+    .lang_EN #mybets .history tbody td:nth-child(4):before {
+        content: 'Odds' !important
+    }
+
+    .lang_CN #mybets .history tbody td:nth-child(4):before {
+        content: '赔率' !important
+    }
+
+    .lang_RU #mybets .history tbody td:nth-child(5):before {
+        content: 'Выигрыш'
+    }
+
+    .lang_EN #mybets .history tbody td:nth-child(5):before {
+        content: 'Outcome'
+    }
+
+    .lang_CN #mybets .history tbody td:nth-child(5):before {
+        content: '奖金'
+    }
+
+    .lang_RU #mybets .history tbody td:nth-child(6):before {
+        content: 'Статус'
+    }
+
+    .lang_EN #mybets .history tbody td:nth-child(6):before {
+        content: 'Status'
+    }
+
+    .lang_CN #mybets .history tbody td:nth-child(6):before {
+        content: '投注状态'
+    }
+
+    #mybets .history tbody td:nth-child(4):before {
+        content: 'Odds' !important;
+        text-align: center;
+        width: auto;
+        margin: 0 !important;
+        height: auto !important;
+        background: 0 0
+    }
+
+    #mybets .history tbody td:nth-child(2) > i:last-child {
+        display: none !important
+    }
+
+    #mybets .history tbody td:nth-child(1n+3):before {
+        display: block !important;
+        font-size: 9px;
+        text-align: center;
+        padding: 0 5px;
+        line-height: 20px;
+        color: #7d7f85;
+        font-weight: 700;
+        text-transform: uppercase
+    }
+
+    .history tbody td {
+        vertical-align: top
+    }
+
+    #mybets .padding_block .block_content {
+        padding: 1%
+    }
+
+    #mybets .bet_status a span {
+        display: none
+    }
+
+    #mybets .history tbody td:first-child {
+        width: 80px;
+        font-size: 10px;
+        padding-right: 0;
+        padding-left: 10px
+    }
+
+    #mybets .express_bet > b {
+        font-size: 11px
+    }
+
+    #mybets .history thead th:first-child {
+        padding-left: 15px
+    }
+
+    #mybets .history thead th:nth-child(1) {
+        width: 80px
+    }
+
+    #mybets .history thead th:nth-child(2) {
+        width: -webkit-calc(100% - 306px);
+        width: calc(100% - 306px)
+    }
+
+    #mybets .history thead th:nth-child(3),
+    #mybets .history thead th:nth-child(4),
+    #mybets .history thead th:nth-child(5) {
+        display: none !important
+    }
+
+    #mybets .history thead th:nth-child(2) {
+        width: -webkit-calc(100% - 150px);
+        width: calc(100% - 150px)
+    }
+
+    #mybets .history tbody td:nth-child(2) {
+        width: -webkit-calc(100% - 100px);
+        width: calc(100% - 100px)
+    }
+
+    #mybets .history tbody td:nth-child(3),
+    #mybets .history tbody td:nth-child(4),
+    #mybets .history tbody td:nth-child(5),
+    #mybets .history tbody td:nth-child(6) {
+        width: 25%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 3px 0 6px !important;
+        border-top: 1px solid #2a2f36
+    }
+
+    #mybets .history tbody td:nth-child(n),
+    #mybets .history thead th:nth-child(n) {
+        display: inline-block
+    }
+
+    #mybets .history thead th:last-child {
+        display: none
+    }
+
+    .user_logged .bottom a:first-child {
+        display: none
+    }
+
+    #contacts .block_content {
+        padding: 25px 1.662%
+    }
+
+    .agreement_text {
+        padding: 10px 2%
+    }
+
+    .write .banned {
+        font-size: 11px;
+        white-space: nowrap
+    }
+
+    .ticket_form {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .text iframe {
+        max-width: 100%;
+        max-height: 500px
+    }
+
+    #wm_type_dep,
+    #card_type_dep,
+    #card_type_with {
+        height: auto
+    }
+
+        #card_type_with a:last-child {
+            margin-right: 0
+        }
+
+        #wm_type_dep a,
+        #card_type_with a,
+        #card_type_dep a {
+            margin-bottom: 10px
+        }
+
+    #history_arrow_giveaway {
+        top: 98px
+    }
+
+    .admin_panel {
+        display: none
+    }
+
+    #cart .skin_container .item {
+        margin-right: 2% !important
+    }
+
+    #cart .skin_container .item {
+        width: 23.5% !important
+    }
+
+        #cart .skin_container .item:nth-child(4n+4) {
+            margin-right: 0 !important
+        }
+
+    #market_order .skin_container .item {
+        margin-right: 2% !important
+    }
+
+    #market_order .skin_container .item {
+        width: 23.5% !important
+    }
+
+        #market_order .skin_container .item:nth-child(4n+4) {
+            margin-right: 0 !important
+        }
+
+    .against_stat .team_stat > span {
+        text-align: left
+    }
+
+    #market_order_items {
+        padding: 10px 10px 0
+    }
+
+    .gaben {
+        display: none
+    }
+
+    #current .timer {
+        white-space: nowrap
+    }
+
+    .dota_logo_v2 .animated_fire {
+        margin-left: -26px
+    }
+
+    #menu_btn_stick {
+        background-image: url(../img_v2/menu.png);
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        vertical-align: top;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase
+    }
+
+    #header #menu_btn_stick {
+        display: none;
+        padding-right: 0;
+        background-position: center center;
+        margin-left: 10px;
+        margin-top: 9px
+    }
+
+    #header.stick #menu_btn_stick {
+        display: inline-block;
+        float: left
+    }
+
+    span.animated_fire {
+        -webkit-transform: rotate(-43deg);
+        -ms-transform: rotate(-43deg);
+        transform: rotate(-43deg)
+    }
+
+    .dota_logo_v2 .animated_fire {
+        margin-left: -40px;
+        margin-top: -56px;
+        -webkit-transform: rotate(-27deg);
+        -ms-transform: rotate(-27deg);
+        transform: rotate(-27deg)
+    }
+
+    .dota_logo_v2 .animated_fire_v2 {
+        margin-left: -7px;
+        margin-top: -19px
+    }
+
+    #chat.fixed_to_window {
+        position: fixed !important
+    }
+
+    .modal {
+        max-width: 92%;
+        min-width: 300px
+    }
+
+    .show-tablet {
+        display: inherit !important
+    }
+
+    #menu span a b {
+        padding-right: 20px;
+        font-size: 11px
+    }
+
+    #menu .column {
+        width: 32%;
+        margin-right: 2%
+    }
+
+    .dep_history table td:nth-child(3),
+    #dep_history table th:nth-child(3) {
+        width: 76px
+    }
+
+    .user_logged .top {
+        width: 75px
+    }
+
+    .user_logged .right_user {
+        overflow: hidden;
+        width: 146px
+    }
+
+    .user_logged .nickname {
+        max-width: 100%
+    }
+
+    .currency_1 .balance_cont .balance {
+        margin-right: 0 !important
+    }
+
+    .contact_text {
+        width: 100%;
+        max-width: 660px
+    }
+
+    #header {
+        margin-top: 0 !important
+    }
+
+    body {
+        padding: 0 !important;
+        min-width: 100%
+    }
+
+    .contact_text br {
+    }
+
+    .footer_menu.f_left {
+        width: 45%
+    }
+
+    .footer_menu.f_right {
+        width: 45%
+    }
+
+    .affilate {
+        padding-right: 216px
+    }
+
+    .footer_top {
+        margin-bottom: 25px
+    }
+
+    .team_against_history_cont {
+        float: left !important
+    }
+
+    .team_history {
+        width: 100%
+    }
+
+        .team_history .event_line_history {
+            margin-right: 0
+        }
+
+    .c100 {
+        margin: 15px 0 0
+    }
+
+    .small_stat > span {
+        text-align: center
+    }
+
+    .team_against_history_cont {
+        width: 100%
+    }
+
+    .stat_column {
+        width: 33%;
+        text-align: center
+    }
+
+    .big_column_stat:nth-child(1):before {
+        height: 50px
+    }
+
+    .history tbody td:nth-child(3) {
+        width: 50px
+    }
+
+    .profile_table td:nth-child(2) > span {
+        width: auto !important;
+        min-width: inherit !important
+    }
+
+    .profile_info #tradelink_input {
+        padding-right: 100px;
+        padding-left: 10px;
+        text-overflow: ellipsis
+    }
+
+    #partner_balance {
+        width: 90px
+    }
+
+    #partner_percent {
+        width: 90px;
+        padding-right: 15px
+    }
+
+    #partner_link_form {
+        width: -webkit-calc(100% - 180px);
+        width: calc(100% - 180px)
+    }
+
+    #link.saved {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .block_content.text p {
+        text-indent: 0
+    }
+
+    #sidebar_news.sidebar {
+        width: 260px
+    }
+
+    #news_single.fw_with_sidebar,
+    #news_list.fw_with_sidebar {
+        width: -webkit-calc(98.5% - 260px) !important;
+        width: calc(98.5% - 260px) !important;
+        padding: 0
+    }
+
+    .stat_column {
+        height: 50px;
+        line-height: 50px
+    }
+
+        .stat_column > span > b {
+            font-size: 14px;
+            margin-right: 5px
+        }
+
+    .profile_settings .big_column_stat:nth-child(2),
+    .big_column_stat:nth-child(2) {
+        width: 100%
+    }
+
+    #mybets .big_column_stat:nth-child(1) {
+        display: none
+    }
+
+    #logo .title > span {
+        font-size: 12px
+    }
+
+    #logo .title {
+        width: 130px
+    }
+
+    #logo {
+        width: 180px
+    }
+
+    .f_left.links {
+        display: none
+    }
+
+    .profile_table tbody td:first-child {
+        padding-left: 19px !important;
+        width: 69px !important
+    }
+
+    .history tbody tr {
+        font-size: 12px
+    }
+
+    .bet_status a {
+        font-size: 10px;
+        line-height: 25px
+    }
+
+    .express_bet > span {
+        font-size: 12px
+    }
+
+    .history thead th {
+        font-size: 10px
+    }
+
+    .history tbody td:first-child {
+        width: 95px
+    }
+
+    #mybets .history tbody td:nth-child(2) {
+        min-width: inherit !important
+    }
+
+    .express_bet > span,
+    .history tbody td:nth-child(2) > span {
+        min-width: inherit;
+        width: -webkit-calc(100% - 85px);
+        width: calc(100% - 85px)
+    }
+
+    .skins_container_absolute {
+        padding-right: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column
+    }
+
+        .skins_container_absolute #cart {
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            -webkit-order: 1;
+            order: 1;
+            width: 100%;
+            position: relative;
+            margin-left: 0
+        }
+
+    #cart .skin_container {
+        height: auto;
+        min-height: 150px
+    }
+
+    #teams_list .team_name_small {
+        font-size: 12px
+    }
+
+    #finished .team_name,
+    #finished .date_ago,
+    #finished .event_name,
+    #finished .sum {
+        font-size: 12px
+    }
+
+    #giveaway_btn span {
+        font-size: 12px;
+        vertical-align: middle
+    }
+
+    #giveaway .item_info {
+        padding: 4px 0 0 10px;
+        width: 285px
+    }
+
+    #giveaway .tablecell {
+        width: 145px
+    }
+
+    #giveaway_history_block td:nth-child(4) {
+        font-size: 12px
+    }
+
+    #giveaway .quality {
+        max-width: 170px
+    }
+
+    #giveaway_history_block td:nth-child(3) {
+        width: 90px
+    }
+
+    #upcoming .timer:before {
+        display: none
+    }
+}
+
+@media(min-width:880px) and (max-width:1023px) {
+    #giveaway_btn a.already {
+        font-size: 12px !important;
+        vertical-align: middle
+    }
+}
+
+@media(max-width:880px) and (min-width:600px) {
+    #banner .team_right > img,
+    #banner .team_left > img {
+        max-width: 55px;
+        height: 55px;
+        top: 14%;
+        background: 0 0;
+        min-width: 0 !important
+    }
+
+    #banner .team_right.hover > img,
+    #banner .team_left.hover > img {
+        max-width: 55px !important;
+        height: 55px !important;
+        top: 17% !important;
+        margin: -5px !important
+    }
+}
+
+@media(max-width:880px) {
+    .snowfall_on #logo:before {
+        display: none !important
+    }
+
+    body.menu_opened {
+        overflow: hidden
+    }
+
+    #chat .block_heading {
+        margin: 0 1.4525vw 0 5.58707159%
+    }
+
+    #header .right_user .user_image {
+        width: 36px;
+        height: 36px
+    }
+
+    #header .user_logged .right_user {
+        padding-top: 9px !important;
+        margin-right: 0
+    }
+
+    #top_menu .wrapper > .f_right {
+        padding-right: 1.4525%
+    }
+
+    #header .wrapper > .f_right {
+        padding-right: 1.4525%;
+        box-sizing: border-box
+    }
+
+    .event.line_event:hover .event_type {
+        opacity: 1 !important
+    }
+
+    .lowindex {
+        z-index: 7 !important
+    }
+
+    #chat .hide_chat {
+        position: absolute;
+        right: 0;
+        top: 6px
+    }
+
+    .background_profile_big {
+        display: none !important
+    }
+
+    #giveaway_btn a.already {
+        padding: 0 15px !important;
+        font-size: 11px !important;
+        line-height: 32px;
+        vertical-align: middle
+    }
+
+    .profile_settings .history_cont td:last-child i,
+    .bet_profile_sum {
+        top: 11px !important
+    }
+
+    .profile_settings .history_cont td:last-child {
+        border-top: 2px solid #343a45 !important;
+        display: block !important;
+        position: relative;
+        width: 100% !important;
+        height: 40px
+    }
+
+    #banner .event_info {
+        font-size: 13px !important
+    }
+
+    .koef_bet {
+        text-align: center
+    }
+
+    .half_img {
+        display: inline-block
+    }
+
+    .expr_map {
+        border-top: none !important;
+        margin-top: 0 !important
+    }
+
+    .balance_cont > div > i,
+    .bonus_cont > div > i {
+        min-width: 49px !important
+    }
+
+    .balance .currency {
+        margin-top: 1px
+    }
+
+    .currency {
+        font-size: 9px !important
+    }
+
+    .expr_map > span:first-child:after {
+        display: none
+    }
+
+    .expr_map:before {
+        background: #2e353d
+    }
+
+    .expr_map {
+        padding-bottom: 7px
+    }
+
+        .expr_map > span:first-child:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            border: 9px solid transparent;
+            border-bottom: 8px solid #272b33;
+            bottom: 0;
+            margin-left: -9px
+        }
+
+        .expr_map > span:first-child {
+            text-transform: uppercase;
+            display: block;
+            position: initial;
+            text-align: center;
+            width: 100%;
+            height: auto !important;
+            padding-bottom: 4px;
+            line-height: 25px;
+            padding-top: 4px;
+            font-size: 11px;
+            background: #2a2f36;
+            position: relative;
+            left: 0;
+            top: 0
+        }
+
+    .team_info .team_logo {
+        float: none;
+        margin: 0 auto 5px
+    }
+
+    .team_info {
+        margin-bottom: 15px
+    }
+
+        .team_info .team_name {
+            max-width: 100% !important;
+            font-size: 16px !important
+        }
+
+    .big_image_bg img {
+        opacity: .15 !important
+    }
+
+    .team_info .team_right {
+        float: none;
+        width: 100%;
+        margin-top: 0 !important;
+        text-align: center;
+        max-width: 100%
+    }
+
+    .not_team {
+        height: auto;
+        margin-bottom: 10px
+    }
+
+    .event_notification {
+        padding: 10px;
+        width: 220px;
+        background-color: rgba(26, 26, 26, .95) !important
+    }
+
+    .notification .close {
+        background-size: 14px;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+        right: 5px
+    }
+
+    .notification {
+        background: rgba(36, 40, 46, .92) url(../img/notify.png) no-repeat 5px 5px;
+        background-size: 30px
+    }
+
+    .event_notification_v2 {
+        background: rgba(36, 40, 46, .92);
+        padding: 5px !important
+    }
+
+    .gems_balance span:last-child {
+        width: 35%
+    }
+
+    .gems_balance span:first-child {
+        width: 65%
+    }
+
+    .lvl_table b {
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 3px;
+        min-width: 30px
+    }
+
+    .lvl_table span {
+        font-size: 11px
+    }
+
+    #coins .gems_balance:after {
+        content: '';
+        clear: both;
+        display: block
+    }
+
+    #coins .gems_balance > div {
+        float: left;
+        width: 50%
+    }
+
+    #coins .gems_balance {
+        box-sizing: border-box;
+        width: 100%;
+        float: none;
+        margin-bottom: 10px
+    }
+
+    .gems_exchange {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px
+    }
+
+    .stat_column {
+        height: 35px;
+        line-height: 35px
+    }
+
+    .profile_edit a,
+    .profile_edit input[type=submit] {
+        margin: 0 1.4525% 10px !important;
+        width: 97.095%
+    }
+
+    .profile_sidebar .block_heading {
+        padding: 0 1.4525% !important
+    }
+
+    .profile_sidebar,
+    .profile_edit {
+        width: 100% !important
+    }
+
+    #mybets .c100 {
+        display: none
+    }
+
+    .SumoSelect > .optWrapper > .options li.opt {
+        line-height: 42px !important
+    }
+
+    .answer iframe {
+        max-width: 100%;
+        max-height: 300px
+    }
+
+    .question .answer {
+        font-size: 11px;
+        line-height: 20px;
+        color: #fefefe;
+        padding: 15px 13px
+    }
+
+    .question .title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px !important;
+        padding: 0 40px 0 10px
+    }
+
+    .history .express_bet .bet_logo {
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px !important;
+        margin-right: 5px !important
+    }
+
+    #banner .img_hltv b {
+        line-height: 23px;
+        font-size: 16px;
+        margin-top: 29px
+    }
+
+    #banner .slidee > div {
+        height: 80px
+    }
+
+    #banner .match_banner:after {
+        height: 71px
+    }
+
+    #banner .team_right,
+    #banner .team_left {
+        height: 79px
+    }
+
+        #banner .team_left:before {
+            right: 0
+        }
+
+        #banner .team_right:before {
+            left: 0
+        }
+
+    #banner .banner_select > b {
+        padding: 0 10px;
+        font-size: 10px;
+        line-height: 22px;
+        margin-bottom: 5px
+    }
+
+    #banner .team_right > .team_name,
+    #banner .team_left > .team_name {
+        line-height: 79px;
+        font-size: 3vw
+    }
+
+    #banner .team_right > .team_name {
+        left: 80px;
+        padding-left: 0;
+        margin: 0 !important
+    }
+
+    #banner .team_left > .team_name {
+        right: 80px;
+        padding-right: 0;
+        margin: 0 !important
+    }
+
+    .banner_img {
+        height: 80px;
+        background-size: auto 60px !important
+    }
+
+    #banner .navi {
+        display: none
+    }
+
+    .giveaway_block {
+        font-size: 12px;
+        line-height: 20px
+    }
+
+        .giveaway_block > span {
+            padding: 15px 45px 15px 50px
+        }
+
+        .giveaway_block .expandable {
+            line-height: 20px;
+            font-size: 12px
+        }
+
+    #vk_auth iframe,
+    #vk_auth {
+        max-width: 100%
+    }
+
+    #menu .only_mobile .column:nth-child(1) span:nth-child(1) a:before {
+        background: url(../img_v2/bet_icon_mobile.png?v2) no-repeat center center;
+        opacity: .25
+    }
+
+    .user_logged .bottom {
+        float: right;
+        width: 42px
+    }
+
+    .user_logged .top {
+        display: none
+    }
+
+    .my_bets:hover {
+        background-color: #3f4654
+    }
+
+    .user_menu a i {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 0 3px;
+        display: block;
+        font-size: 9px !important;
+        height: 11px;
+        min-width: 0;
+        padding: 0 5px
+    }
+
+    .my_bets {
+        position: relative;
+        transition: all .2s ease;
+        font-size: 0 !important;
+        display: block;
+        width: 42px;
+        height: 42px;
+        background: #343a45 url(../img_v2/bet_icon_mobile.png?v2) no-repeat center center;
+        background-size: 35px;
+        border-radius: 4px;
+        text-align: center;
+        border: 0 !important;
+        vertical-align: top
+    }
+
+    #menu .mobile_scroll {
+        height: 100%;
+        padding-top: 74px;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-bottom: 65px
+    }
+
+    #menu > .wrapper:first-child {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: rgba(39, 43, 51, .8)
+    }
+
+    #menu {
+        background: rgb(39 43 51);
+        padding-bottom: 0;
+        box-sizing: border-box;
+        max-height: 100%;
+        height: 100%
+    }
+
+    .only_mobile {
+        display: block !important
+    }
+
+    .menu_header {
+        padding: 0 3%
+    }
+
+        .menu_header .close {
+            right: 3%
+        }
+
+    #giveaway_history_block {
+        float: none;
+        max-width: 100%
+    }
+
+    .user_logged .nickname {
+        display: none
+    }
+
+    .write .banned {
+        line-height: 40px !important
+    }
+
+    #ticket textarea {
+        height: 170px
+    }
+
+    .ticket_list span:nth-child(2) {
+        width: 40% !important
+    }
+
+    .express_heading > span:nth-child(2) {
+        width: 100% !important
+    }
+
+    .express_heading > span:nth-child(1) {
+        display: none
+    }
+
+    .express_bet_item {
+        max-height: 56px
+    }
+
+    .express_vs {
+        left: 50%;
+        top: 22px;
+        line-height: 35px;
+        width: 35px;
+        margin-left: -17.5px
+    }
+
+    .additional_bets_express .express_bet_block {
+        line-height: 40px;
+        font-size: 11px
+    }
+
+    .open_additional {
+        left: 50%;
+        top: 22px;
+        width: 34px;
+        height: 34px;
+        margin-left: -17px
+    }
+
+    .express_bet_block {
+        display: block;
+        width: 100%;
+        line-height: 34px
+    }
+
+    .resize_drag {
+        display: none !important
+    }
+
+    .hide_chat:before {
+        width: 3px;
+        height: 15px;
+        background: #ebf0f6;
+        margin-left: 20px;
+        margin-top: 14px
+    }
+
+    .hide_chat:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 20px;
+        width: 15px;
+        height: 3px;
+        background: #ebf0f6
+    }
+
+    .hide_chat {
+        position: relative;
+        background: #343a45;
+        width: 42px;
+        height: 42px;
+        margin: 0
+    }
+
+    #show_stream.active {
+        padding-right: 60px !important
+    }
+
+    .active .stream_close,
+    .active .stream_minimize {
+        top: 7px;
+        width: 35px;
+        height: 35px
+    }
+
+    .event.line_event .center {
+        height: 100% !important
+    }
+
+    .event.line_event .stream {
+        top: 55px;
+        z-index: 5;
+        line-height: 20px !important;
+        height: 20px !important
+    }
+
+    #teams_list .fans {
+        font-size: 12px
+    }
+
+    #teams_list .rank {
+        font-size: 12px
+    }
+
+    .block_content.text {
+        font-size: 13px
+    }
+
+    .news_item_heading h1 {
+        width: 87%;
+        font-size: 12px
+    }
+
+    .back_to_news:before {
+        width: 42px;
+        margin: 0;
+        background-size: 32px
+    }
+
+    .back_to_news {
+        font-size: 0;
+        width: 42px;
+        padding: 0;
+        height: 42px
+    }
+
+    .news_item_heading > span,
+    .news_heading > span {
+        width: 100%
+    }
+
+    .copy_text {
+        padding-bottom: 70px
+    }
+
+    .user_logged .right_user {
+        width: auto;
+        margin-right: 4px
+    }
+
+    .balance_cont,
+    .bonus_cont {
+    }
+
+    .game_filter {
+        min-width: 135px
+    }
+
+    .logout_link {
+        display: none
+    }
+
+    #header #menu_btn {
+        font-size: 0;
+        float: right;
+        margin: 9px 0 0 8px
+    }
+
+    .snow_btn {
+        display: none
+    }
+
+    #header.stick.blurred {
+        z-index: 10
+    }
+
+    .select_two_desc {
+        right: 44%;
+        left: auto
+    }
+
+    .toggle_chat {
+        display: none
+    }
+
+    .fw_with_sidebar#current {
+        width: 100%
+    }
+
+    .stream_minimize {
+        display: none !important
+    }
+
+    .team_against_history_cont {
+        float: none !important;
+        margin: 0 auto
+    }
+
+    #giveaway .quality {
+        max-width: inherit
+    }
+
+    .balance_cont a {
+        height: 25px;
+        text-align: center;
+        width: 15px;
+        line-height: 25px;
+        margin-top: 0
+    }
+
+    #current,
+    #current.no_chat {
+        min-height: inherit !important
+    }
+
+    .dota_logo_v2 .animated_fire {
+        margin-left: -26px
+    }
+
+    #finished .event:after {
+        display: none
+    }
+
+    #finished .event {
+        float: none !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+        display: block;
+        max-width: 510px;
+        padding-bottom: 2%
+    }
+
+    #finished .event_cont {
+        margin-bottom: 0
+    }
+
+    #upcoming .event {
+        width: 100% !important;
+        margin: 0% !important
+    }
+
+    #deposit_tab .payout_type.small {
+        width: 300px;
+        display: block;
+        margin: 0 auto
+    }
+
+        #deposit_tab .payout_type.small a {
+            width: 100%
+        }
+
+    #current .event.line_event {
+        max-width: 100% !important;
+        width: 100% !important
+    }
+
+    #current .event {
+        width: 100% !important;
+        max-width: 510px;
+        margin: 0 auto !important;
+        display: block;
+        float: none !important
+    }
+
+    .balance_cont > div,
+    .bonus_cont > div {
+        border-bottom: none;
+        position: relative;
+        padding-right: 111px;
+        line-height: 21px;
+        height: 21px
+    }
+
+        .balance_cont > div:before {
+            background-color: #2a2f36;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 61%;
+            height: 1px;
+            display: inline-block
+        }
+
+    .tab.active {
+        display: block !important
+    }
+
+    .table_block_no_inh {
+        display: block
+    }
+
+    #upcoming .timerб .event.line_event .timer {
+        top: 4px !important
+    }
+
+    .balance_cont > div,
+    .bonus_cont > div {
+        white-space: nowrap
+    }
+
+    .balance_cont > div {
+        padding-top: 8px
+    }
+
+    .balance_cont .f_right {
+    }
+
+        .balance_cont .f_right:before {
+            content: "";
+            top: -9px;
+            left: -5px;
+            width: 1px;
+            height: 60px;
+            background-color: #2a2f36;
+            display: inline-block;
+            position: absolute
+        }
+
+    .table_block_no_inh .payout_type {
+        display: block;
+        padding-right: 0;
+        margin: 0 auto 10px;
+        width: 100%
+    }
+
+    .payout_type a:nth-child(2n+1) {
+        margin-right: 1.2%
+    }
+
+    .payout_type a {
+        width: 49.4%;
+        float: left;
+        line-height: 42px;
+        height: 42px;
+        margin-bottom: 6px;
+        font-size: 13px
+    }
+
+        .payout_type a > b {
+            margin-top: 11px
+        }
+
+    .skins_container_absolute {
+        min-width: 100%
+    }
+
+    .table_block > div,
+    .table_block > form {
+        width: 100%;
+        padding: 0;
+        display: inline-block
+    }
+
+    #pay_form {
+        padding: 20px 10px;
+        box-sizing: border-box
+    }
+
+    #wm_type_dep a,
+    #card_type_with a,
+    #card_type_dep a {
+        margin-bottom: 10px;
+        line-height: 42px;
+        height: 42px
+    }
+
+    #wm_type_dep,
+    #card_type_dep,
+    #card_type_with {
+        padding-bottom: 10px
+    }
+
+    #top_menu .f_left .btn {
+        margin-right: 0
+    }
+
+    .social {
+        display: none
+    }
+
+    #menu_btn {
+        font-size: 0;
+        padding-right: 0;
+        background-position: center center
+    }
+
+    #logo {
+        margin-right: 25px;
+        margin-left: 7px
+    }
+
+    .social {
+        margin-right: 10px
+    }
+
+    #menu .column {
+        float: none;
+        width: 100%;
+        margin-right: 0%
+    }
+
+    .footer_copy {
+        display: none
+    }
+
+    .footer_top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin-bottom: 15px
+    }
+
+    .footer_menu,
+    .footer_menu.f_right,
+    .footer_menu.f_left {
+        width: 100%;
+        text-align: center
+    }
+
+    #footer {
+        margin-top: 60px !important;
+        padding: 14px 0 0
+    }
+
+    .affilate {
+        margin-bottom: 15px
+    }
+
+    .footer_bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center
+    }
+
+    .footer_menu a {
+        line-height: 38px
+    }
+
+    .block.team_sidebar {
+        display: block;
+        float: none;
+        margin: 0 auto 20px
+    }
+
+    .block.team_mainblock {
+        width: 100%;
+        display: block;
+        float: none
+    }
+
+    .sidebar,
+    .sidebar.f_right {
+        width: 320px;
+        display: block;
+        float: none;
+        margin: 0 auto 20px
+    }
+
+    #chat.flex_chat {
+        display: flex !important
+    }
+
+    .fw_with_sidebar {
+        width: 100%;
+        display: block;
+        float: none
+    }
+
+    .profile_settings .tabs > a {
+        font-size: 12px
+    }
+
+    .dep_history table td:nth-child(1),
+    #dep_history table th:nth-child(1) {
+        width: 110px
+    }
+
+    .dep_history table td:nth-child(3),
+    #dep_history table th:nth-child(3) {
+        width: 70px
+    }
+
+    .sort_time a {
+        font-size: 13px;
+        padding: 0 15px
+    }
+
+    #news_single.fw_with_sidebar,
+    #news_list.fw_with_sidebar {
+        width: 100% !important
+    }
+
+    #sidebar_news.sidebar .block_heading {
+        margin: 0 0 0 2%
+    }
+
+    #sidebar_news.sidebar {
+        width: 100%
+    }
+
+    .users_top .bet:nth-child(2n+1) {
+        margin-right: 1%
+    }
+
+    .users_top:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+
+    .users_top .bet {
+        width: 49.5%;
+        margin-bottom: 5px !important;
+        float: left;
+        margin: 0;
+        box-sizing: border-box
+    }
+
+    .users_top {
+        padding: 10px 1%
+    }
+
+    #mybets .big_column_stat:nth-child(2) {
+        width: 100%;
+        padding: 8px 0
+    }
+
+    #mybets .stat_column {
+        width: 214px
+    }
+
+    .balance_cont .add_money,
+    .balance_cont .payout {
+        margin-right: 5px
+    }
+
+    .balance_cont a {
+        display: inline-block;
+        width: 28px;
+        height: 42px;
+        font-size: 0;
+        border: 0 !important;
+        overflow: hidden;
+        margin-right: 0;
+        position: relative
+    }
+
+    .add_money:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 3px;
+        height: 15px;
+        background: #79be4d;
+        margin-top: -7.5px;
+        margin-left: -1.5px
+    }
+
+    .add_money:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 3px;
+        width: 15px;
+        background: #79be4d;
+        margin-left: -7.5px;
+        margin-top: -1.5px
+    }
+
+    .payout:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 3px;
+        width: 15px;
+        background: #d64529;
+        margin-left: -7.5px;
+        margin-top: -1.5px
+    }
+
+    .bonus_cont .f_right {
+        display: none !important
+    }
+
+    .balance_cont .f_right {
+        margin: 0;
+        width: 99px;
+        position: absolute;
+        right: 0;
+        top: 9px;
+        z-index: 1
+    }
+
+    .sidebar.f_left.hide-tablet {
+        display: none
+    }
+
+    .sidebar.f_left.show-tabl {
+        display: block !important
+    }
+
+    .skin_container .item {
+        width: 110px
+    }
+
+    .SumoSelect.open > .optWrapper {
+        max-height: -webkit-calc(100vh - 250px) !important;
+        max-height: calc(100vh - 250px) !important
+    }
+
+    .register,
+    .login {
+        line-height: 42px;
+        font-size: 13px
+    }
+
+    .register {
+        margin-right: 10px
+    }
+
+    #banner .img_1,
+    #banner .img_2 {
+        -webkit-background-size: cover;
+        background-size: cover
+    }
+
+    #banner .navi {
+        margin-right: 4.5%;
+        top: 27px
+    }
+
+    .express_bet_block,
+    .express_bet_side {
+        font-size: 11px
+    }
+
+        .express_bet_block .left > a,
+        .express_bet_block .right > a {
+            font-size: 10px;
+            margin: 0 5px;
+            min-width: 36px
+        }
+
+    .additional_bets_express:before {
+        left: 50%
+    }
+
+    #upcoming .block_content {
+        max-height: inherit !important
+    }
+
+    #giveaway .item_info {
+        float: none;
+        display: block
+    }
+
+    #giveaway .item_info {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .giveaway_cont {
+        height: 220px
+    }
+
+        .giveaway_cont.opened {
+            height: 324px
+        }
+
+    .gaben {
+        display: none
+    }
+
+    #giveaway .tablecell {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        max-width: 163px
+    }
+
+    #giveaway .item_info {
+        width: 70%;
+        padding-left: 15px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top
+    }
+
+    .dota_logo_v2 .animated_fire_v2 {
+        margin-left: -7px;
+        margin-top: -19px
+    }
+
+    .game_filter .selected span {
+        width: 15px
+    }
+
+    .express_bet_block .left > img,
+    .express_bet_block .right > img {
+        display: inline-block;
+        margin-top: 4.5px;
+        vertical-align: top
+    }
+
+    .express_bet_side {
+        white-space: nowrap;
+        line-height: 20px;
+        margin-top: 2px;
+        width: 100%;
+        padding: 0 !important;
+        text-align: center
+    }
+
+    .additional_bets_express {
+        padding-left: 0;
+        width: 100%
+    }
+
+    #current .event .stream {
+        font-size: 10px;
+        white-space: nowrap
+    }
+
+    #market_order .summary > div:first-child {
+        width: 100%;
+        float: none
+    }
+
+    #agreement {
+        float: left !important
+    }
+
+    #withdraw_tab .payout_type.small a,
+    #deposit_tab .payout_type.small a {
+        font-size: 14px !important;
+        line-height: 50px;
+        text-align: left
+    }
+}
+
+@media screen and (min-width:540px) and (max-width:570px) {
+    .user_logged {
+        margin-right: 0
+    }
+}
+
+@media(max-width:367px) {
+    #place_bet_btn {
+        display: block !important;
+        margin: 0 auto !important
+    }
+}
+
+@media(min-width:481px) and (max-width:880px) {
+    .event_notification_v2 .not_v2 > div:first-child {
+        text-align: center;
+        line-height: 29px;
+        margin-bottom: 2px
+    }
+
+    .event_notification_v2 .close {
+        top: 0;
+        right: -35px;
+        border: 5px solid #25292f;
+        border-left: 0
+    }
+}
+
+@media(max-width:550px) {
+    .line_select {
+        height: auto
+    }
+
+    #place_bet_btn {
+        display: block;
+        width: 157px;
+        margin: 0 auto
+    }
+
+    .currency_input #place_bet_btn {
+        width: 255px
+    }
+
+    .gem_bet_icon #place_bet_btn {
+        width: 157px !important
+    }
+
+    .bet_content {
+        padding-top: 5px
+    }
+
+    #upcoming .live_betting_upcoming .center .event_type:before {
+        height: 20px
+    }
+
+    .modal .heading {
+        height: 40px;
+        line-height: 40px
+    }
+
+    .modal {
+        padding: 10px
+    }
+
+    .until_next {
+        font-size: 18px
+    }
+
+        .until_next .timer {
+            font-size: 34px !important
+        }
+
+    #menu {
+        transition: none !important
+    }
+
+    .block_heading.no_navi {
+        height: 50px !important
+    }
+
+    #upcoming .block_heading > i,
+    #finished .block_heading > i {
+        margin: 18px 0 0 8px;
+        position: absolute;
+        left: 0
+    }
+
+    .no_matches_found {
+        border-top: 2px solid #2e353d;
+        font-size: 12px;
+        margin: 13px auto
+    }
+
+    .flot-x-axis {
+        display: none !important
+    }
+
+    .line_select a {
+        padding: 0 7px;
+        margin-right: 2px !important;
+        margin-bottom: 5px
+    }
+
+    .live_betting :before {
+        animation: none !Important
+    }
+
+    .giveaway_cont {
+        height: 220px
+    }
+
+    #current .team_logo:before {
+        font-size: 10px !important;
+        line-height: 14px !important
+    }
+
+    .right_user .bottom {
+        display: none
+    }
+
+    #bet_next .currency,
+    .expr_win .currency {
+        display: inline-block
+    }
+
+    .crypto_line span:first-child {
+        min-width: 0
+    }
+
+    .crypto_payment {
+        font-size: 11px;
+        text-align: center
+    }
+
+    .crypto_line:last-child {
+        font-size: 12px
+    }
+
+    .file_upload > div {
+        font-size: 12px
+    }
+
+    .file_upload > a {
+        padding: 0 25px;
+        font-size: 12px
+    }
+
+    .file_upload_table,
+    .file_upload_table > div,
+    .file_upload,
+    #upload_form input[type=submit] {
+        display: block;
+        text-align: center
+    }
+
+    #upload_form input[type=submit] {
+        font-size: 12px;
+        margin: 15px auto 5px
+    }
+
+    .balance .currency {
+        display: none !Important
+    }
+
+    .gems_exchange input[type=submit] {
+        width: 100%;
+        margin: 10px 0
+    }
+
+    .gems_exchange_icon {
+        display: none
+    }
+
+    .gems_exchange form > div {
+        width: 100%;
+        margin: 10px 0 0 !important
+    }
+
+    #coins .gems_balance span:first-child {
+        margin-right: 10px
+    }
+
+    #coins .gems_balance span {
+        display: inline-block;
+        width: auto !important
+    }
+
+    #coins .gems_balance > div {
+        text-align: center;
+        float: none;
+        width: 100%
+    }
+
+    .current_lvl b {
+        top: 1px !important;
+        right: 1px !important
+    }
+
+    .lvl_table b {
+        position: absolute !important;
+        right: 2px;
+        top: 2px;
+        line-height: 38px;
+        display: inline-block;
+        height: 36px;
+        border-radius: 2px;
+        margin-left: 20px;
+        background: #2a2f36;
+        font-size: 15px;
+        width: 50px
+    }
+
+    .lvl_table span:nth-child(10) b {
+        height: 100%;
+        line-height: 55px;
+        height: 55px
+    }
+
+    .lvl_table span {
+        width: 100%;
+        margin: 0 0 5px;
+        height: 40px;
+        line-height: 40px
+    }
+
+    #mybets .c100 {
+        display: inline-block !important
+    }
+
+    .express_bet .betted_on:after {
+        width: 8px;
+        height: 8px;
+        background-size: contain !important
+    }
+
+    .history tbody .express_bet b {
+        display: block
+    }
+
+    .express_bet {
+        min-height: 32px
+    }
+
+        .express_bet > span {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: -webkit-calc(100% - 64px);
+            width: calc(100% - 64px);
+            overflow: hidden
+        }
+
+    .history .express_bet .bet_logo {
+        width: 12px;
+        height: 12px;
+        background-size: 12px 12px !important;
+        margin-right: 5px !important
+    }
+
+    #mybets .express_bet > b {
+        font-size: 9px
+    }
+
+    #banner .img_hltv b {
+        line-height: 17px;
+        font-size: 11px;
+        margin-top: 20px;
+        padding: 0 6px;
+        border-radius: 4px;
+        border-width: 1px
+    }
+
+    #banner .slidee > div {
+        height: 80px
+    }
+
+    .banner_img {
+        height: 80px;
+        background-size: auto 80px !important
+    }
+
+    .profile_settings #mybets .bets_stats {
+        display: block !important
+    }
+
+    #mybets .bets_stats {
+        display: none !important
+    }
+
+    .stat_column {
+        height: 45px;
+        width: 100% !important;
+        text-align: center;
+        display: block;
+        line-height: 45px
+    }
+
+    .right_user {
+        width: auto !important
+    }
+
+    .express_bet_side > span:first-child {
+        min-width: 0 !important
+    }
+
+    .express_bet_side {
+        font-size: 10px !important
+    }
+
+    #upcoming .bet_1 .left .team_logo:after,
+    #upcoming .bet_2 .right .team_logo:after,
+    #current .line_event.bet_2 .right .team_logo:after,
+    #current .line_event.bet_1 .left .team_logo:after {
+        right: -3px;
+        top: -3px
+    }
+
+    #express_modal .summary > div:first-child {
+        width: 100%;
+        float: none;
+        text-align: center
+    }
+
+    #confirm_express {
+        float: none;
+        margin: 15px auto
+    }
+
+    #chat.fixed_to_window .smile_list {
+        bottom: 32px;
+        right: 8px;
+        top: auto;
+        left: 0
+    }
+
+    .text iframe {
+        max-height: 300px
+    }
+
+    .news_item_heading {
+        padding-right: 70px;
+        padding-left: 2%
+    }
+
+    #news_list .news_image {
+        width: 65px;
+        height: 46px;
+        margin-top: 10px
+    }
+
+    #news_single .news_image {
+        display: none;
+        width: 65px;
+        height: 46px;
+        margin: 9px 0 0 5px
+    }
+
+    .news_heading {
+        padding-left: 75px
+    }
+
+        .news_heading > span {
+            width: 100%;
+            font-size: 11px
+        }
+
+    .timer_animated {
+        zoom: .8
+    }
+
+    .SumoSelect > .CaptionCont > span {
+        font-size: 14px
+    }
+
+    #payout_form input[type=text],
+    #cashout_form input[type=text],
+    #cashout_form input[type=number],
+    #cashout_form input[type=password],
+    #pay_form input[type=number],
+    #pay_form input[type=text] {
+        font-size: 14px
+    }
+
+    .dep_card_notice {
+        font-size: 13px;
+        color: #7d7f85
+    }
+
+    #market .block_heading a:nth-child(2):before,
+    #market .block_heading a:nth-child(1):before,
+    .profile_settings .tabs > a:before {
+        position: absolute;
+        left: 20px
+    }
+
+    #market .block_heading .tabs a,
+    .profile_settings #mybets .tabs > a,
+    #mybets .tabs a {
+        white-space: nowrap;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        width: 33.3%;
+        text-align: center
+    }
+
+    .skin_pagi .prev,
+    .skin_pagi .next {
+        width: 42px;
+        height: 42px
+    }
+
+    #page_num {
+        line-height: 42px;
+        width: 34px
+    }
+
+    .pagi_num span {
+        line-height: 42px
+    }
+
+    .hide_on_mobile {
+        display: none
+    }
+
+    .stream_title a {
+        vertical-align: top;
+        font-size: 0
+    }
+
+    #current .team_logo,
+    #finished .team_logo {
+        width: 74%;
+        padding-bottom: 74%
+    }
+
+    .no_available {
+        margin: 0 5px;
+        font-size: 11px
+    }
+
+    a.tip:hover > span {
+        padding: 10px !important
+    }
+
+    a.tip > span {
+        width: 95px;
+        font-size: 11px;
+        line-height: 17px
+    }
+
+    .team_stat_link {
+        font-size: 12px
+    }
+
+    #place_bet_btn {
+        display: block;
+        width: 157px;
+        margin: 0 auto
+    }
+
+    .bet_heading {
+        margin: 10px 0 10px 5px;
+        max-width: 83%;
+        overflow: hidden;
+        box-sizing: border-box
+    }
+
+    .team_select > div.active > div {
+        width: 390px !important
+    }
+
+    .team_select > div > div {
+        width: auto !important
+    }
+
+    .team_select > div {
+        padding: 0
+    }
+
+    .team_select {
+        height: 88px
+    }
+
+        .team_select .has_stat_link .team_name,
+        .team_info .team_name {
+            margin-top: 10px
+        }
+
+        .team_select > div.active {
+            width: 73%
+        }
+
+        .team_select > div {
+            overflow: hidden;
+            width: 27%
+        }
+
+        .team_select .team_logo {
+            width: 70px;
+            height: 70px;
+            margin: 8.5px !important;
+            float: none
+        }
+
+        .team_select .active .team_logo {
+            width: 70px;
+            height: 70px;
+            margin: 8.5px;
+            float: left
+        }
+
+    .team_info .team_logo {
+        width: 80px;
+        height: 80px
+    }
+
+    .team_select .team_name,
+    .team_info .team_name {
+        font-size: 4vw;
+        line-height: 86px
+    }
+
+    .team_right > span {
+        font-size: 13px;
+        width: auto
+    }
+
+    .team_sum {
+        margin-bottom: 11px;
+        font-size: 13px
+    }
+
+    .team_info .team_logo img {
+        width: 60px;
+        height: 60px
+    }
+
+    .team_select .team_logo img {
+        width: 50px;
+        height: 50px
+    }
+
+    .dep_history table td,
+    #dep_history table th {
+        width: 70px;
+        font-size: 10px;
+        padding: 0 8px
+    }
+
+        .dep_history table td:nth-child(1),
+        #dep_history table th:nth-child(1) {
+            width: 70px
+        }
+
+    .dep_history table tr td:nth-child(2),
+    #dep_history table tr td:nth-child(2) {
+        width: 106px;
+        padding: 0 1px
+    }
+
+    .event_line_history .match_info,
+    .match_table .bet_percent {
+        font-size: 13px
+    }
+
+    #compare_teams .event_line_history .score,
+    #compare_teams.match_table .bet_percent {
+        width: auto
+    }
+
+    #compare_teams.match_table .bet_percent {
+        margin-right: 15px
+    }
+
+    #compare_teams .event_line_history:before {
+        height: 40px
+    }
+
+    #current .line_event .event_type:before {
+        content: '' !important;
+        width: 0 !important;
+        vertical-align: top;
+        margin-top: 0 !important;
+        margin-right: -3px !important;
+        background-size: 9px !important
+    }
+
+    #current .line_event .stream:before {
+        border: 3px solid transparent !important;
+        border-left: 5px solid #d74529 !important
+    }
+
+    #current .line_event .stream {
+        font-size: 9px !important;
+        opacity: 1 !important;
+        line-height: 19px !important;
+        padding: 0;
+        margin: 0 auto !important;
+        left: 50%;
+        margin-left: -40px !important;
+        bottom: 8px !important;
+        border-radius: 2px !important;
+        top: auto;
+        height: 18px !important;
+        line-height: 19px !important;
+        width: 68px;
+        background: rgb(46 53 61);
+        border: 1px solid #783d35;
+        border-radius: 1px !important;
+        color: #d74529
+    }
+
+    #current .event .stream:before {
+        border: 4px solid transparent;
+        border-left: 6px solid #d74529
+    }
+
+    #header .f_right .user_info {
+    }
+
+    .bet_content .bet a {
+        font-size: 11px;
+        line-height: 25px
+    }
+
+    .discipline_icon > span {
+        margin-left: 0
+    }
+
+    .bet_event {
+        margin-left: 5px;
+        font-size: 12px
+    }
+
+    .bet_content .bet {
+        line-height: 38px
+    }
+
+        .bet_content .bet .koef:before {
+            margin-top: 6px
+        }
+
+        .bet_content .bet a {
+            margin-top: 8px;
+            height: 22px !important;
+            line-height: 22px;
+            background-size: 10px !important
+        }
+
+    .bet_info > span:nth-child(1) {
+        left: 0
+    }
+
+    .bet_info > span:nth-child(3) {
+        right: 0
+    }
+
+    .bet_info > span {
+        padding-top: 11px;
+        height: 50px;
+        position: absolute;
+        width: 49%;
+        top: 0;
+        max-width: 420px;
+        margin: 0 auto;
+        display: block
+    }
+
+    .bet_info {
+        padding-top: 60px
+    }
+
+    .map .toggle {
+        display: none
+    }
+
+    .bet_content .map {
+        max-height: 600px
+    }
+
+    .modal.bets {
+        padding: 0 5px 5px
+    }
+
+    .modal .heading {
+        padding: 0 5px
+    }
+
+    .modal_content {
+        padding: 5px
+    }
+
+    .chat_rules_text {
+        line-height: 24px;
+        font-size: 13px;
+        padding: 12px
+    }
+
+    .bet_content .bet,
+    .bet_content .map {
+        margin: 0 5px 5px
+    }
+
+    .center_bet {
+        margin: 10px 0;
+        width: 100%;
+        padding: 0
+    }
+
+    #current .sum,
+    #current .percent_sum,
+    #upcoming .sum,
+    #upcoming .percent_sum {
+        font-size: 11px
+    }
+
+    .event.line_event .event_cont .left,
+    .event.line_event .event_cont .right {
+        width: 36% !important;
+        max-width: 36% !important
+    }
+
+    #current .team_name {
+        font-size: 13px
+    }
+
+    .event.line_event .event_name {
+        font-size: 10px !important
+    }
+
+    .event.line_event .left .team_logo,
+    .event.line_event .right .team_logo {
+        width: 38px !important
+    }
+
+    .event.line_event .left .team_logo {
+        margin-left: 10px !important
+    }
+
+    .event.line_event .right .team_logo {
+        margin-right: 10px !important
+    }
+
+    .express_bet_block span {
+        width: -webkit-calc(100% - 55px);
+        width: calc(100% - 55px);
+        line-height: 15px;
+        font-size: 10px;
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    #current .team_logo img {
+        width: 86%;
+        height: 86%;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%)
+    }
+
+    #current .timer:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%
+    }
+
+    .event.line_event .timer {
+        font-size: 9px !important
+    }
+
+    .express_bet_block .left > a.can_place,
+    .express_bet_block .right > a.can_place {
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    .stream_title .team_1 img {
+        margin-left: 5px
+    }
+
+    .stream_title .team_2 img {
+        margin-right: 5px
+    }
+
+    #stream .team_1,
+    #stream .team_2 {
+        font-size: 11px;
+        width: 37%;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden
+    }
+
+    #stream .center_stream {
+        width: 26%
+    }
+
+    .stream_timer {
+        font-size: 12px;
+        white-space: nowrap
+    }
+
+    .open_additional {
+        left: 50%
+    }
+
+    .express_info > span {
+        width: 100%;
+        display: block;
+        padding-top: 20px;
+        height: 63px
+    }
+
+    #place_express {
+        margin: 10px 0
+    }
+
+    #giveaway .image:before {
+        font-size: 10px
+    }
+
+    #giveaway .giveaway_timer {
+        font-size: 11px
+    }
+
+    #giveaway .image {
+        background-size: cover !important;
+        background-color: transparent !important
+    }
+
+    #giveaway_btn span {
+        display: none
+    }
+
+    #giveaway .small_image {
+        width: 100%;
+        background-size: contain !important
+    }
+
+    #finished .event {
+        width: 100% !important
+    }
+
+    #upcoming .block_heading,
+    #finished .block_heading {
+        height: 100px;
+        text-align: center;
+        font-size: 13px
+    }
+
+        #upcoming .block_heading .navi,
+        #finished .block_heading .navi {
+            top: 40px;
+            right: auto;
+            text-align: center;
+            width: 100%;
+            height: 54px
+        }
+
+    #upcoming .event .left .team_logo,
+    #current .line_event .left .team_logo {
+        margin-left: 6px !important;
+        margin-right: 4px !important
+    }
+
+    #upcoming .event .right .team_logo,
+    #current .line_event .right .team_logo {
+        margin-right: 6px !important;
+        margin-left: 4px !important
+    }
+
+    #upcoming .event .team_logo,
+    #current .line_event .team_logo {
+        width: 36px !important;
+        padding-bottom: 36px !important;
+        margin-top: 2px !important
+    }
+
+    #current .line_event .timer {
+        display: none
+    }
+
+    #current .line_event.no_stream .timer {
+        display: block !important
+    }
+
+    #upcoming .timer,
+    #current .line_event .timer {
+        line-height: 19px;
+        font-size: 11px !important;
+        border-bottom: 0 !important;
+        margin: 2px 4% 0 !important;
+        width: 92% !important;
+        border-radius: 4px 4px 0 0;
+        padding-bottom: 2px;
+        font-weight: 400 !important
+    }
+
+    .navi .dot {
+        margin: 23px 2px !important
+    }
+
+    #upcoming .event_cont:after,
+    #current .line_event .event_cont:after {
+        display: none
+    }
+
+    #upcoming .event .team_name,
+    #current .line_event .team_name {
+        font-size: 13px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 !important;
+        padding: 3px 6px 0 !important;
+        max-width: 100%;
+        line-height: 27px
+    }
+
+    #current .event.line_event .event_type {
+        line-height: 11px !important
+    }
+
+    #current .event.line_event {
+        padding-bottom: 2.2% !important
+    }
+
+    #current .line_event .timer.soon {
+        font-size: 10px !important
+    }
+
+    #upcoming .event_name:before,
+    #current .line_event .event_name:before {
+        width: 9px !important;
+        height: 9px !important;
+        margin-right: 3px !important;
+        margin-top: 5px !important
+    }
+
+    #upcoming .center .event_name,
+    #current .line_event .event_name,
+    #upcoming .center .event_type,
+    #current .line_event .event_type {
+        font-size: 9.5px !important;
+        line-height: 20px !important
+    }
+
+    #upcoming .left,
+    #upcoming .right,
+    #current .line_event .left,
+    #current .line_event .right {
+        position: relative;
+        height: 65px !important
+    }
+
+        #upcoming .left .sum,
+        #current .line_event .left .sum,
+        #upcoming .left .percent_sum {
+            position: absolute;
+            right: 50px;
+            top: 7px;
+            border: 0;
+            margin-top: 3px;
+            background: rgba(100, 157, 66, .27)
+        }
+
+        #upcoming .right:before,
+        #current .line_event .right:before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background: rgba(42, 47, 54, .31);
+            position: absolute;
+            top: 10px;
+            z-index: 0;
+            left: 7px
+        }
+
+        #upcoming .left:before,
+        #current .line_event .left:before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+            background: rgba(42, 47, 54, .31);
+            position: absolute;
+            top: 10px;
+            z-index: 0;
+            right: 7px
+        }
+
+    #upcoming .event_cont:before {
+        font-weight: 700;
+        content: 'VS';
+        font-size: 172px;
+        color: rgba(42, 47, 54, .31);
+        position: absolute;
+        left: 0;
+        top: -44px;
+        width: 100%;
+        text-align: center
+    }
+
+    #upcoming .right .sum,
+    #current .line_event .right .sum,
+    #upcoming .right .percent_sum {
+        position: absolute;
+        left: 50px;
+        top: 7px;
+        margin-top: 3px;
+        border: 0;
+        background: rgba(100, 157, 66, .27)
+    }
+
+    #upcoming .bet_1 .left .sum,
+    #upcoming .bet_2 .right .sum,
+    #upcoming .bet_1 .left .percent_sum,
+    #upcoming .bet_2 .right .percent_sum {
+        background: rgba(145, 64, 52, .75)
+    }
+
+    #current .bet_1 .left .sum,
+    #current .bet_2 .right .sum,
+    #current .bet_1 .left .percent_sum,
+    #current .bet_2 .right .percent_sum {
+        background: rgba(145, 64, 52, .75)
+    }
+
+    #current .left .sum,
+    #current .right .sum,
+    #current .left .percent_sum,
+    #current .right .percent_sum {
+        border: 0;
+        background: rgba(100, 157, 66, .27)
+    }
+
+    #upcoming .event {
+        height: 80px !important
+    }
+
+    .block_heading {
+        font-size: 13px
+    }
+
+    #current .block_heading > a {
+        padding: 0 15px
+    }
+
+    .register,
+    .login {
+    }
+
+    .register {
+        margin-right: 6px
+    }
+
+    .skins_container_absolute #skin_container .item {
+        width: 32% !important
+    }
+
+        .skins_container_absolute #skin_container .item:nth-child(4n+4) {
+            margin-right: 2% !important
+        }
+
+        .skins_container_absolute #skin_container .item:nth-child(3n+3) {
+            margin-right: 0% !important
+        }
+
+    #cart .skin_container .item {
+        width: 32% !important
+    }
+
+        #cart .skin_container .item:nth-child(4n+4) {
+            margin-right: 2% !important
+        }
+
+        #cart .skin_container .item:nth-child(3n+3) {
+            margin-right: 0% !important
+        }
+
+    #market_order .skin_container .item {
+        width: 32% !important
+    }
+
+        #market_order .skin_container .item:nth-child(4n+4) {
+            margin-right: 2% !important
+        }
+
+        #market_order .skin_container .item:nth-child(3n+3) {
+            margin-right: 0% !important
+        }
+
+    .profile_settings .big_column_stat:nth-child(1) {
+        width: 12%
+    }
+
+    .profile_settings .big_column_stat:nth-child(2) {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        width: 88%
+    }
+
+    .dep_container {
+        overflow-x: auto
+    }
+
+    #partner_list .total {
+        font-size: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+        #partner_list .total span {
+            display: inline-block;
+            width: -webkit-calc(50% - 5px);
+            width: calc(50% - 5px);
+            margin-bottom: 10px;
+            border-right: none
+        }
+
+            #partner_list .total span:nth-child(2n+2) {
+                margin-left: 10px
+            }
+
+    .event_line_history .match_info {
+        width: -webkit-calc(100% - 95px);
+        width: calc(100% - 95px)
+    }
+
+    .event_line_history .score {
+        width: 45%
+    }
+
+        .event_line_history .score span,
+        .bet_percent span {
+            font-weight: 700;
+            display: inline-block !important;
+            color: #b0b3b9;
+            line-height: 30px;
+            margin-right: 10px;
+            font-size: 13px;
+            cursor: default
+        }
+
+    .match_table .bet_percent {
+        width: 45%;
+        margin-right: 0
+    }
+
+    .event_line_history:before {
+        height: 80px
+    }
+
+    .event_line_history.lost .score b:first-of-type {
+        background: #914034;
+        -webkit-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        border-color: #a83720;
+        margin-right: 5px
+    }
+
+    .event_line_history.won .score b:first-of-type {
+        background: #3b4746;
+        border-color: #77bd4b;
+        -webkit-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        margin-right: 5px
+    }
+
+    .match_table_heading > div:nth-child(3),
+    .match_table_heading > div:nth-child(4) {
+        display: none
+    }
+
+    .event_line_history .match_date {
+        min-width: 60px;
+        width: 60px;
+        padding-right: 10px
+    }
+
+    .match_table_heading > div:nth-child(1) {
+        padding-left: 18px
+    }
+
+    .match_table_heading > div:nth-child(2) {
+        padding-left: 40px
+    }
+
+    .profile_table td {
+        font-size: 11px
+    }
+
+    .history tbody td:first-child i {
+        margin-right: 5px
+    }
+
+    .profile_table tbody td:first-child {
+        width: 69px !important;
+        font-size: 10px
+    }
+
+    .history tbody td:nth-child(3) {
+        width: 40px;
+        padding: 0
+    }
+
+    .history tbody td:nth-child(2) b {
+        padding-left: 0
+    }
+
+    .exp_block span {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        width: calc(100% - 80px) !important;
+        display: inline-block;
+        font-weight: 400;
+        vertical-align: middle;
+        line-height: 15px
+    }
+
+    .history tbody td:nth-child(2) > span {
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        width: -webkit-calc(100% - 80px) !important;
+        width: calc(100% - 80px) !important
+    }
+
+    .dota_logo_v2 .animated_fire {
+        margin-left: -40px;
+        margin-top: -56px
+    }
+
+    .dota_logo_v2 .animated_fire_v2 {
+        margin-left: -21px;
+        margin-top: -19px
+    }
+
+    .dota_logo_v2 #logo:after {
+        left: -10px
+    }
+
+    .history thead th {
+        font-size: 10px
+    }
+
+        .history thead th:nth-child(3) {
+            padding-left: 0;
+            padding-right: 0
+        }
+
+    .history .bet_logo {
+        width: 32px;
+        height: 32px;
+        background-size: 25px 25px !important
+    }
+
+    #market .block_heading .tabs a {
+        font-size: 12px
+    }
+
+    .max_item_price {
+        font-size: 11px;
+        line-height: 25px;
+        padding: 6px 15px 6px 50px
+    }
+
+    .footer_menu a {
+        font-size: 12px
+    }
+
+    #giveaway_history_block td:nth-child(n) {
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 10px;
+        height: 37px
+    }
+
+    #giveaway_history_block td:nth-child(1) {
+        width: 50px !important;
+        padding: 2.5px 5px
+    }
+
+    #giveaway_history_block td:nth-child(2) {
+        width: -webkit-calc(100% - 200px) !important;
+        width: calc(100% - 200px) !important
+    }
+
+    #giveaway_history_block tr {
+        border-bottom: 2px solid #2a2f36
+    }
+
+    #giveaway_history_block td:nth-child(3),
+    #giveaway_history_block td:last-child {
+        width: 72px;
+        padding: 9px 5px
+    }
+
+    #giveaway .quality {
+        font-size: 10px
+    }
+
+    #giveaway_history_block .username_ga {
+        font-size: 11px;
+        white-space: nowrap
+    }
+
+    #current .event {
+        padding-bottom: 2.2% !important
+    }
+
+    .bet_timer {
+        font-size: 13px
+    }
+
+    .modal .close {
+        right: 10px;
+        background-color: #2f353d;
+        opacity: 1;
+        border-radius: 4px;
+        top: 10px;
+        width: 32px;
+        height: 32px
+    }
+
+    .additional_bets_express:before {
+        left: 50%
+    }
+}
+
+@media(max-width:480px) {
+    #chat .block_heading {
+        margin: 0 2.4525vw 0 5.58707159% !important
+    }
+
+    #chat.fixed_to_window {
+        right: 0
+    }
+
+    .event_notification_v2 .not_v2 > div:first-child {
+        text-align: center;
+        line-height: 29px;
+        margin-bottom: 5px
+    }
+
+    .event_notification_v2 .close {
+        top: 5px;
+        right: 5px
+    }
+
+    #chat .block_content {
+        width: 100vw !important
+    }
+
+    #chat .transform_block {
+        transition: transform .2s ease
+    }
+
+    #chat .block_heading b {
+        margin-left: 4px
+    }
+
+    #chat.hidden .transform_block {
+        transform: translateX(46%)
+    }
+
+    #banner {
+        display: none !important
+    }
+
+    .map.live_bets .map_name {
+        font-size: 13px
+    }
+
+    .select_two_title {
+        left: 3% !important
+    }
+
+    #giveaway_modal {
+        padding: 10px !important
+    }
+
+    #chat.fixed_to_window {
+        width: 100%
+    }
+
+    .game_filter .dropdown {
+        transform-origin: bottom !important;
+        width: 100%
+    }
+
+    #header .wrapper > .f_right {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block
+    }
+
+    #show_stream.active {
+        padding: 0 !important
+    }
+
+    #market .block_heading .gems:after {
+        vertical-align: top
+    }
+
+    #market .block_heading .gems {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        height: 14px
+    }
+
+    #market .block_heading a:nth-child(2):before,
+    #market .block_heading a:nth-child(1):before {
+        left: 5px;
+        margin-top: 5px
+    }
+
+    #market .block_heading a:nth-child(2):after,
+    #market .block_heading a:nth-child(1):after {
+        left: 4px;
+        top: 4px
+    }
+
+    .block_heading {
+        font-size: 12px
+    }
+
+    #show_stream:before {
+        display: none
+    }
+
+    #show_stream {
+        background: 0 0 !important;
+        font-size: 0
+    }
+
+    #agreement {
+        padding-bottom: 70px;
+        margin: 20px auto 0;
+        float: none !important;
+        display: block
+    }
+
+    #make_offer {
+        bottom: 25px;
+        left: 50%;
+        margin-left: -72.5px;
+        position: absolute;
+        z-index: 10
+    }
+
+    .bet_content .bet_select_two .koef {
+        right: 0 !important;
+        line-height: 33px !important
+    }
+
+    .bet_content .bet .disabled .koef {
+        opacity: 0 !important
+    }
+
+    .bet_content .bet .koef {
+        transition: opacity .2s ease;
+        position: absolute;
+        right: 5px;
+        left: auto !important;
+        width: 64px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 38px;
+        padding-right: 1px
+    }
+
+    .select_two_desc {
+        font-weight: 400;
+        right: 75px;
+        font-size: 13px
+    }
+
+    .bet_content .bet {
+        padding: 0 2% 0 10px;
+        font-size: 13px
+    }
+
+        .bet_content .bet a {
+            padding: 0 7px;
+            font-size: 0;
+            width: 50px;
+            height: 22px !important;
+            background: rgba(100, 157, 66, .27)
+        }
+
+    .bet_content .content {
+        padding-bottom: 5px
+    }
+
+    .map_name {
+        vertical-align: top;
+        font-size: 12px
+    }
+
+    .map_heading {
+        text-align: center
+    }
+
+    #pay_form .profile_heading {
+        width: 100%
+    }
+
+    #giveaway_btn span {
+        display: none
+    }
+
+    #sum_pay {
+        background: #343a45 url(/template_v2/img_v2/coin.png) no-repeat right 15px center !important
+    }
+
+    #sum_pay,
+    #ph_input {
+        width: 100% !important
+    }
+
+    .table_block {
+        display: inline-block
+    }
+
+    #giveaway .giveaway_timer b {
+        font-size: 12px
+    }
+
+    #current .team_name,
+    #current .event_name {
+        font-size: 12px
+    }
+
+    #current .timer {
+        font-size: 12px
+    }
+
+    #finished .scores {
+        font-size: 12px
+    }
+
+    .history tbody td {
+        vertical-align: top
+    }
+
+    #current .line_event .event_cont:after {
+        width: 96px !important;
+        margin-left: -48px !important
+    }
+
+    #current .event .stream {
+        font-size: 10px
+    }
+
+    #header:not(.stick) .user_logged {
+        float: none
+    }
+
+    .express_info {
+        padding: 5px;
+        margin-bottom: 5px
+    }
+
+    #place_express {
+        padding: 0 5px
+    }
+
+    .input_fix,
+    .pay_info {
+        width: 100%;
+        box-sizing: border-box
+    }
+
+    #payout_form input[type=text],
+    #cashout_form input[type=text],
+    #cashout_form input[type=number],
+    #cashout_form input[type=password] {
+        width: 100% !important
+    }
+
+    #skin_filter .SumoSelect:nth-child(1) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+
+    #skin_filter .SumoSelect:nth-child(2) {
+        width: 100%
+    }
+
+    #market .block_heading .tabs a {
+        font-size: 11px;
+        padding: 0
+    }
+
+    #menu .column span {
+        margin-bottom: 8px;
+        height: 45px
+    }
+
+    .affilate {
+        text-align: center;
+        display: block;
+        padding-top: 50px;
+        padding: 50px 0 0;
+        float: none !important;
+        background: url(../img/affilate.png) no-repeat center top
+    }
+
+    .copy_text {
+        margin: 0;
+        text-align: center
+    }
+
+    .team_stat {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        width: 100%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start
+    }
+
+        .team_stat:nth-child(1) {
+            width: 100%
+        }
+
+    .stat_container {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .small_stat:last-child {
+        margin-bottom: 0
+    }
+
+    .team_stat .c100.small,
+    .fake_circle {
+        margin: 10px 20px !important
+    }
+
+    .team_stat > span,
+    .small_stat > span {
+        text-align: left
+    }
+
+    .c100 {
+        margin: 10px 20px
+    }
+
+    .team_page_info {
+        padding: 10px
+    }
+
+    .stat_title a {
+        padding: 0 5px;
+        margin-right: 5px;
+        font-size: 10px
+    }
+
+        .stat_title a:last-child {
+            margin-right: 0
+        }
+
+    .profile_settings .tabs > a {
+        font-size: 12px;
+        padding: 0 10px
+    }
+
+    .profile_settings #mybets .tabs > a {
+        font-size: 12px;
+        padding: 0 5px
+    }
+
+    .profile_settings .tabs > a:before,
+    .profile_settings .tabs > a:after {
+        display: none !important
+    }
+
+    .profile_info_column .SumoSelect {
+        width: 100%;
+        margin-right: 0
+    }
+
+        .profile_info_column .SumoSelect:last-child {
+            margin-top: 30px
+        }
+
+    .profile_info_column {
+        position: relative;
+        margin-bottom: 10px
+    }
+
+    .profile_info .input_form {
+        margin-bottom: 10px
+    }
+
+    .profile_info_column .profile_heading:nth-child(2) {
+        position: absolute;
+        top: 75px;
+        left: 0
+    }
+
+    .profile_info_column .profile_heading {
+        width: 100%
+    }
+
+    #promocode_input {
+        width: -webkit-calc(98.5% - 110px);
+        width: calc(98.5% - 110px)
+    }
+
+    .profile_settings #promo_form input[type=submit] {
+        width: 110px !important;
+        font-size: 12px
+    }
+
+    .sort_time {
+        font-size: 0
+    }
+
+        .sort_time a {
+            width: 50%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+    #partner_list .block_heading {
+        height: auto
+    }
+
+    #partner_pays tbody tr,
+    #payout_history tbody tr {
+        font-size: 11px
+    }
+
+    #partner_pays tbody td,
+    #payout_history tbody td,
+    #partner_pays th,
+    #payout_history th {
+        padding: 0 10px
+    }
+
+    #partner_profile .ajax_forms {
+        display: block
+    }
+
+    #partner_percent,
+    #partner_balance {
+        display: inline-block
+    }
+
+    #partner_link_form {
+        margin-top: 20px;
+        display: block;
+        width: 100%
+    }
+
+    #partner_pays th,
+    #payout_history th {
+        line-height: 30px;
+        font-size: 10px
+    }
+
+    #partner_page .block_heading {
+        font-size: 11px
+    }
+
+    .expandable .block_heading:before {
+        right: 10px
+    }
+
+    .expandable .block_heading:after {
+        right: 17px
+    }
+
+    .news_bottom > span {
+        display: none
+    }
+
+    .news_item_heading h1 {
+        width: 100%
+    }
+
+    .sidebar,
+    #sidebar_news.sidebar,
+    .sidebar.f_right {
+        width: 100%
+    }
+
+    .logged_in #logo .title {
+        display: none
+    }
+
+        .logged_in #logo .title > span {
+            display: none
+        }
+
+    .logged_in #logo .title {
+        font-size: 17px
+    }
+
+    .logged_in #logo {
+        width: 33px;
+        margin-right: 15px !important;
+        margin-left: 14px !important
+    }
+
+        .logged_in #logo:after {
+            left: -2px;
+            width: 40px;
+            top: -1px
+        }
+
+    #logo .title > span {
+        font-size: 10.1px
+    }
+
+    #logo .title {
+        width: 130px;
+        padding-left: 34px
+    }
+
+    #logo:after {
+        left: 2px;
+        width: 30px;
+        top: -1px
+    }
+
+    #logo {
+        width: 145px;
+        margin-right: 9px
+    }
+
+    span.animated_fire {
+        margin-left: -9px;
+        margin-top: 1px
+    }
+
+    .right_user .user_image {
+        margin-right: 10px
+    }
+
+    .user_info:after {
+        content: '';
+        display: block;
+        clear: both
+    }
+
+    .block.team_sidebar {
+        width: 100%
+    }
+}
+
+@media(max-width:670px) {
+    .personal_stats > div {
+        width: 47%
+    }
+
+    .payout_type a:nth-child(2n+1) {
+        margin-right: 0
+    }
+
+    .payout_type a {
+        width: 100%;
+        float: none
+    }
+
+    .users_top .bet {
+        width: 100% !important
+    }
+
+        .users_top .bet:nth-child(2n+1) {
+            margin-right: 0 !important
+        }
+}
+
+@media(max-width:920px) {
+    .team_stat .fake_circle {
+        width: 30px;
+        height: 30px;
+        margin: 35px 15px 35px 0;
+        font-size: 13px;
+        line-height: 30px
+    }
+}
+
+@media(max-width:400px) {
+    .team_select > div.active .team_logo:after {
+        transform: translateX(0px) !important
+    }
+
+    .team_select > div .team_logo:after {
+        transform: translateX(-30px);
+        transition: transform .2s ease
+    }
+
+    .payout_type,
+    #deposit_tab .payout_type.small {
+        width: 100%
+    }
+
+    .skins_container_absolute #skin_container .item {
+        width: 49% !important
+    }
+
+        .skins_container_absolute #skin_container .item:nth-child(3n+3) {
+            margin-right: 2% !important
+        }
+
+        .skins_container_absolute #skin_container .item:nth-child(2n+2) {
+            margin-right: 0% !important
+        }
+
+    #cart .skin_container .item {
+        width: 49% !important
+    }
+
+        #cart .skin_container .item:nth-child(3n+3) {
+            margin-right: 2% !important
+        }
+
+        #cart .skin_container .item:nth-child(2n+2) {
+            margin-right: 0% !important
+        }
+
+    #market_order .skin_container .item {
+        width: 49% !important
+    }
+
+        #market_order .skin_container .item:nth-child(3n+3) {
+            margin-right: 2% !important
+        }
+
+        #market_order .skin_container .item:nth-child(2n+2) {
+            margin-right: 0% !important
+        }
+
+    #header.stick #menu_btn_stick {
+        top: 5px;
+        right: 10px
+    }
+
+    #menu_btn_stick {
+        min-width: 30px;
+        height: 35px
+    }
+
+    #upcoming .timer:before {
+        display: none
+    }
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:1) {
+    .dota_logo_v2 .animated_fire {
+    }
+}
