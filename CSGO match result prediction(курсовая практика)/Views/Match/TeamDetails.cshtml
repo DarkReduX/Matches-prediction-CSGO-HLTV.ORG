@@ -1,0 +1,50 @@
+﻿@model CSGO_match_result_prediction_курсовая_практика_.Models.TeamInfo
+
+@{
+    ViewBag.Title = "TeamDetails";
+}
+
+<h2>TeamDetails</h2>
+
+<div class="team_profile">
+    <h4>TeamInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogoUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogoUrl)
+        </dd>
+       
+    </dl>
+    <div class="map-statistics">
+        @foreach (var item in Model.Stats) {
+        <div class="map-statistics-container">
+            <div class="map-statistics-row">
+                <div class="map-statistics-row-map">
+                    <div class="map-statistics-row-map-mapname">
+                        @item.MapName;
+                    </div>
+                </div>
+                <div class="map-statistics-row-win-percentage">
+                    @item.WinPercentage%
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
