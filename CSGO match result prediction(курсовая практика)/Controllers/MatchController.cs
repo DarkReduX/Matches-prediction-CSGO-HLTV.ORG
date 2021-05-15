@@ -22,7 +22,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Contro
                 .Include(m => m.Prediction)
                 .Include(m => m.TeamsInfo)
                 .OrderBy(m => m.StartTime)
-                .Where(m => m.TeamsInfo.Count() == 2 && m.Result == null && m.StartTime > DateTime.Now)
+                .Where(m => m.TeamsInfo.Count() == 2 && m.Result == null)
                 .ToListAsync();
             return View(matchesInfo);
         }

@@ -24,7 +24,7 @@
     </style>
     <div id="content">
         <div class="wrapper">
-            @Html.Partial("_LiveMatchList");
+            @Html.Partial("_LiveMatchList", Model.Where(m => m.StartTime < DateTime.Now))
             <div class="clearfix"></div>
             <div id="upcoming" class="block">
                 <div class="block_heading">
@@ -41,7 +41,7 @@
                          style="width: 1000%; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); transform: translateX(0px);">
                         <div class="page active_page images_active" style="width:10%;">
                             
-                            @Html.Partial("_MatchList")
+                            @Html.Partial("_MatchList", Model.Where(m => m.StartTime > DateTime.Now))
                             
                         </div>
                         <div class="page" style="width:10%;">
