@@ -1,0 +1,50 @@
+﻿@model CSGO_match_result_prediction_курсовая_практика_.Models.AlgorithmStatsViewModel
+@{
+    ViewBag.Title = "AlgorithmStatsCSGO";
+}
+@{int count = Model.LostCount + Model.WinCount; }
+<h2>Algorithm Statistics in CS:GO matches</h2>
+<div class="bets_stats">
+    <div class="big_column_stat"></div>
+    <div class="big_column_stat">
+        <div class="stat_column"><span><b>@count</b>Сделано ставок</span></div><div class="stat_column">
+            <div class="c100 p32 smallest">
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
+            </div><span><b>@Model.WinRate%</b>Процент <br>выигрышей</span>
+        </div><div class="stat_column"><span><b>@Model.WinCount</b>Выиграно ставок</span></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+@foreach (var item in Model.MatchInfos)
+{
+    var team1_logo_class = item.Prediction.Id == item.TeamsInfo.ToList()[0].Id ? "predicted" : "";
+    var team2_logo_class = item.Prediction.Id == item.TeamsInfo.ToList()[1].Id ? "predicted" : "";
+    string winPredict = item.Prediction.Id == item.Result.Winner.Id ? "win" : "lose";
+
+    <div class="event_cont @winPredict">
+        <a href="#register" data-raw_id="7089" class="left m_open">
+            <div class="team_logo">
+                <img alt="@item.TeamsInfo.ToList()[0].Name" class="@team1_logo_class" src="@item.TeamsInfo.ToList()[0].LogoUrl">
+            </div>
+            <span class="team_name">@item.TeamsInfo.ToList()[0].Name</span>
+            <!--<span class="sum odds_icon">1.618</span> <span class="percent_sum">57<i class="rrpercent"></i></span>
+            -->
+        </a>
+        <div class="center">
+            <span class="event_name">@item.EventName</span>
+            <span class="event_type">@item.MatchFormat.ToUpperInvariant()</span>
+            <span class="timer timer_active" data-start="05/11/2021 16:00:00">@item.StartTime</span>
+            <!--<span class="event_map">@{/*item.MatchFormat.ToUpperInvariant()*/}</span>-->
+        </div>
+        <a href="#register" data-raw_id="1653" class="right m_open">
+            <div class="team_logo">
+                <img alt="@item.TeamsInfo.ToList()[1].Name" class="@team2_logo_class" src="@item.TeamsInfo.ToList()[1].LogoUrl">
+            </div>
+            <span class="team_name">@item.TeamsInfo.ToList()[1].Name</span>
+
+        </a>
+    </div>
+}
