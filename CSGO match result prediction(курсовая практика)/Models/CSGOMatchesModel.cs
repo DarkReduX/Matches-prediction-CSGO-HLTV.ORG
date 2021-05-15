@@ -37,7 +37,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string LogoUrl { get; set; }
-        public MatchInfo MatchInfo { get; set; }
+        public ICollection<MatchInfo> MatchInfo { get; set; }
         public ICollection<TeamMapStats> Stats { get; set; }
 
     }
@@ -57,5 +57,11 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         public string MatchUrl { get; set; }
         public DateTime StartTime { get; set; }
     }
-
+    public class AlgorithmStatsViewModel
+    {
+        public List<MatchInfo> MatchInfos { get; set; }
+        public double WinRate { get; set; }
+        public int LostCount { get; set; }
+        public int WinCount { get; set; }
+    }
 }
