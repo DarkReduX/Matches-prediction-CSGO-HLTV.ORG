@@ -2,49 +2,66 @@
 @{
     ViewBag.Title = "AlgorithmStatsCSGO";
 }
-@{int count = Model.LostCount + Model.WinCount; }
-<h2>Algorithm Statistics in CS:GO matches</h2>
-<div class="bets_stats">
-    <div class="big_column_stat"></div>
-    <div class="big_column_stat">
-        <div class="stat_column"><span><b>@count</b>Сделано ставок</span></div><div class="stat_column">
-            <div class="c100 p32 smallest">
-                <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                </div>
-            </div><span><b>@Model.WinRate%</b>Процент <br>выигрышей</span>
-        </div><div class="stat_column"><span><b>@Model.WinCount</b>Выиграно ставок</span></div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-@foreach (var item in Model.MatchInfos)
-{
-    var team1_logo_class = item.Prediction.Id == item.TeamsInfo.ToList()[0].Id ? "predicted" : "";
-    var team2_logo_class = item.Prediction.Id == item.TeamsInfo.ToList()[1].Id ? "predicted" : "";
-    string winPredict = item.Prediction.Id == item.Result.Winner.Id ? "win" : "lose";
-
-    <div class="event_cont @winPredict">
-        <a href="#register" data-raw_id="7089" class="left m_open">
-            <div class="team_logo">
-                <img alt="@item.TeamsInfo.ToList()[0].Name" class="@team1_logo_class" src="@item.TeamsInfo.ToList()[0].LogoUrl">
-            </div>
-            <span class="team_name">@item.TeamsInfo.ToList()[0].Name</span>
-            <!--<span class="sum odds_icon">1.618</span> <span class="percent_sum">57<i class="rrpercent"></i></span>
-            -->
-        </a>
-        <div class="center">
-            <span class="event_name">@item.EventName</span>
-            <span class="event_type">@item.MatchFormat.ToUpperInvariant()</span>
-            <span class="timer timer_active" data-start="05/11/2021 16:00:00">@item.StartTime</span>
-            <!--<span class="event_map">@{/*item.MatchFormat.ToUpperInvariant()*/}</span>-->
-        </div>
-        <a href="#register" data-raw_id="1653" class="right m_open">
-            <div class="team_logo">
-                <img alt="@item.TeamsInfo.ToList()[1].Name" class="@team2_logo_class" src="@item.TeamsInfo.ToList()[1].LogoUrl">
-            </div>
-            <span class="team_name">@item.TeamsInfo.ToList()[1].Name</span>
-
-        </a>
-    </div>
+@{int count = Model.LostCount + Model.WinCount;
 }
+<div id="content" class="profile_settings">
+    <div class="wrapper">
+
+        <div id="mybets" class="block">
+            <div class="tabs">
+                <a href="#bets" class="active">Статистика</a>
+            </div>
+            <div class="block_content">
+                <div class="tab active" id="bets">
+                    <div class="bets_stats">
+                        <div class="big_column_stat"></div>
+                        <div class="big_column_stat">
+                            <div class="stat_column"><span><b>@count</b>Сделано ставок</span></div><div class="stat_column">
+                                <div class="c100 p52 smallest">
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div><span><b>@Model.WinRate</b>Процент <br>выигрышей</span>
+                            </div><div class="stat_column"><span><b>@Model.WinCount</b>Выиграно ставок</span></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="history_cont profile_table">
+                        <table class="history">
+                            <thead>
+                                <tr>
+                                    <th>Дата матча</th>
+                                    <th>Ставка</th>
+                                    <th>Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.MatchInfos)
+                                {
+                                    var betStatus = item.Result.Winner == item.Prediction ? "win_bet" : "lose_bet";
+                                    var bettedTeam1 = item.Prediction == item.TeamsInfo.ToList()[0] ? "betted_on" : "";
+                                    var bettedTeam2 = bettedTeam1.IsEmpty() ? "betted_on" : "";
+                                    <tr class="@betStatus">
+                                        <td><i class="csgo_icon_small"></i>@item.StartTime.ToString("dd/MM/yy")<br>@item.StartTime.ToString("HH:mm")</td>
+                                        <td>
+                                        <a href="/Match/TeamDetails/@item.TeamsInfo.ToList()[0].Id" title="@item.TeamsInfo.ToList()[0].Name" 
+                                           class="has_stats bet_logo @bettedTeam1" 
+                                           style="background: #2a2f36 url('@item.TeamsInfo.ToList()[0].LogoUrl') no-repeat center center;background-size:30px 30px;"></a>
+                                        <a title="@item.TeamsInfo.ToList()[1].Name" class="has_stats bet_logo @bettedTeam2"
+                                           href="/Match/TeamDetails/@item.TeamsInfo.ToList()[1].Id" 
+                                           style="background: #2a2f36 url('@item.TeamsInfo.ToList()[1].LogoUrl') no-repeat center center;background-size:30px 30px;"></a>
+                                        <span><b>@item.Prediction.Name</b> - Победа в матче (@item.MatchFormat.ToUpper())</span></td>
+                                        <td><span class="bet_profile_sum"></span><i class="rr"></i></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>

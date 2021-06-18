@@ -18,7 +18,7 @@
             var team_predicted = item.Prediction.Id == item.TeamsInfo.ToList()[0].Id ? "bet_1" : "bet_2";
             <div class="event line_event csgo_event @team_predicted" data-app_id="570" data-id="95082">
                 <div class="event_cont">
-                    <a href="" data-raw_id="49" class="left m_open">
+                    <a href="/Match/TeamDetails/@item.TeamsInfo.ToList()[0].Id" data-raw_id="49" class="left m_open">
                         <div class="team_logo">
                             <img alt="@item.TeamsInfo.ToList()[0].Name" class=""
                                  src="@item.TeamsInfo.ToList()[0].LogoUrl">
@@ -32,13 +32,13 @@
                         <span class="event_name">@item.EventName</span> <span class="event_type">
                             @item.MatchFormat
                         </span>
-                        <a href="https://positive.bet/#" class="stream"
+                        <a href="" class="stream"
                            data-id="RU:tdota2mc_ru|EN:tesl_dota2b|">Просмотр</a>
                         <span class="timer soon" data-start="05/13/2021 16:00:00">
                             Матч начался<b class="hide_on_mobile"> уже</b>
                         </span>
                     </div>
-                    <a href="" data-raw_id="7889" class="right m_open">
+                    <a href="Match/TeamDetails/@item.TeamsInfo.ToList()[0].Id" data-raw_id="7889" class="right m_open">
                         <div class="team_logo">
                             <img alt="@item.TeamsInfo.ToList()[1].Name" class=""
                                  src="@item.TeamsInfo.ToList()[1].LogoUrl">
