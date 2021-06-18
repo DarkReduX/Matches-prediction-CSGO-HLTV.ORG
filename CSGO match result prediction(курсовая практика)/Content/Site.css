@@ -1,6 +1,16 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    color: white;    
+}
+
+.navbar {
+    background-color: #2a2f36;
+    border-color: #24282e;
+}
+
+.jumbotron {
+    color: black;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -333,11 +343,22 @@ textarea {
     vertical-align: top;
 }
 /*hltv.org stats styles*/
-/*
+
+.playerProfile .tab-content, .teamProfile .tab-content {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 50%);
+    background-color: #2d3844;
+    border-top: 1px solid #495867;
+    box-shadow: 0 2px 2px 0 rgb(50 50 50 / 25%);
+    padding: 8px 16px 16px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 18px;
+}
+
 .teamProfile .map-statistics-container {
     transition: .2s ease;
     padding: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #495867;
 }
 
 .teamProfile .map-statistics-row {
@@ -360,7 +381,8 @@ textarea {
     .teamProfile .map-statistics-row-map img {
         width: 100%;
         border-radius: 4px;
-        box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 50%);
+        vertical-align: middle;
     }
 
     .teamProfile .map-statistics-row-map div {
@@ -368,20 +390,20 @@ textarea {
         color: #fff;
         font-weight: 700;
         text-align: center;
-        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+        text-shadow: 0 1px 0 rgb(0 0 0 / 50%);
         font-size: 13px;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 10%;
+        transform: translateY(0%);
     }
 
 .teamProfile .map-statistics-row-win-percentage {
     font-weight: 700;
 }
-*/
+
 
 .event *:after, .event *:before {
     -webkit-box-sizing: unset !important;
@@ -397,3 +419,4 @@ textarea {
     -webkit-box-sizing: unset !important;
     box-sizing: content-box;
 }
+
