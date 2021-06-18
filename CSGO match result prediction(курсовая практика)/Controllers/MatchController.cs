@@ -32,11 +32,13 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Contro
             var completedMatches = await db.MatchesInfo
                 .Include(m => m.Prediction)
                 .Include(m => m.Result)
-                .Include(m => m.TeamsInfo)
                 .Include(m => m.Result.Winner)
-                .Where(m => m.TeamsInfo.Count == 2 && m.Result != null)
+                .Include(m => m.Result.Loser)
+                .Include(m => m.TeamsInfo)
+                .Where(m => m.TeamsInfo.Count == 2 && m.Result != null && m.Prediction != null)
                 .OrderByDescending(m => m.StartTime)
                 .ToListAsync();
+
             int winCount = completedMatches.Where(m => m.Result.Winner.Id == m.Prediction.Id).Count();
             int lostCount = completedMatches.Count() - winCount;
             double winRate = Math.Round((double)winCount / (winCount + lostCount) * 100, 1);
@@ -58,11 +60,11 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Contro
         }
         public async Task<ActionResult> _LiveMatchList()
         {
-            List<MatchInfo> liveMatches = db.MatchesInfo.Include(m => m.TeamsInfo)
+            List<MatchInfo> liveMatches = await db.MatchesInfo.Include(m => m.TeamsInfo)
                 .Include(m => m.Prediction)
                 .Include(m => m.Result)
                 .Where(m => m.Result != null && m.TeamsInfo.Count() == 2 && m.StartTime < DateTime.Now)
-                .ToList();
+                .ToListAsync();
             return PartialView(liveMatches);
         }
         // GET: Match/Details/5
