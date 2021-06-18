@@ -38,6 +38,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Models
         public string Name { get; set; }
         public string LogoUrl { get; set; }
         public ICollection<MatchInfo> MatchInfo { get; set; }
+        public ICollection<MatchInfo> PredictedIn { get; set; }
         public ICollection<TeamMapStats> Stats { get; set; }
 
     }
