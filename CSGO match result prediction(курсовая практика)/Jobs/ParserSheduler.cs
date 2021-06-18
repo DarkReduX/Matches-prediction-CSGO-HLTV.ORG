@@ -22,7 +22,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                 .WithIdentity("loadData", "parser")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                .WithIntervalInMinutes(3)
+                .WithIntervalInMinutes(30)
                 .RepeatForever()).Build();
 
             await sheduler.ScheduleJob(loadNewData, trigger);

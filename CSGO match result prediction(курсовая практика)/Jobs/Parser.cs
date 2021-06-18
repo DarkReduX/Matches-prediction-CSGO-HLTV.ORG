@@ -9,7 +9,6 @@ using System.Data.Entity.Validation;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
-//sing Microsoft.;
 
 namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
 {
@@ -48,7 +47,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
             adress = @"https://www.hltv.org/matches";
             context = BrowsingContext.New(config);
             document = await context.OpenAsync(adress);
-            const int count = 10;
+            const int count = 30;
             List<MatchInfo> matchInfos = new List<MatchInfo>();
             List<TeamInfo> teamsInfo = new List<TeamInfo>();
             var upcomingMatchesList = document.All.Where(m => m.LocalName == "div" && m.ClassName == "upcomingMatch ");
@@ -110,10 +109,18 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                         teamsInfo.Add(Team1);
                         db.TeamsInfo.Add(Team1);
                     }
+                    else if(team1containsDb != null)
+                    {
+                       // db.Entry(Team1).State = EntityState.Modified;
+                    }
                     if (team2contains == null && team2containsDb == null)
                     {
                         teamsInfo.Add(Team2);
                         db.TeamsInfo.Add(Team2);
+                    }
+                    else if(team2containsDb != null)
+                    {
+                       // db.Entry(Team2).State = EntityState.Modified;
                     }
 
                 }
@@ -126,7 +133,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
 
                 if (counter > count)
                     break;
-                counter++;
+
                 var itemEvent = item.GetElementsByClassName("matchEventName ")
                                                 .FirstOrDefault();
                 var itemTeams = item.GetElementsByClassName("matchTeamName text-ellipsis");
@@ -149,10 +156,16 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                     var stats = ParseMatchStats("https://www.hltv.org" + itemMatchUrl).Result;
                     string team1_id = item.GetAttribute("team1"),
                            team2_id = item.GetAttribute("team2");
-                    var Team1 = db.TeamsInfo.ToList()
+                    var Team1 = db.TeamsInfo
+                        .Include(t=>t.MatchInfo)
+                        .Include(t=>t.Stats)
+                        .ToList()
                         .Where(t => t.Id == team1_id)
                         .FirstOrDefault();
-                    var Team2 = db.TeamsInfo.ToList()
+                    var Team2 = db.TeamsInfo
+                        .Include(t=>t.MatchInfo)
+                        .Include(t=>t.Stats)
+                        .ToList()
                         .Where(t => t.Id == team2_id)
                         .FirstOrDefault();
                     if (Team1 == null)
@@ -178,7 +191,7 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                         };
                     else
                     {
-                        Team2.Stats = stats[0];
+                        Team2.Stats = stats[1];
                         db.Entry(Team2).State = EntityState.Modified;
                     }
                     MatchInfo match = new MatchInfo
@@ -191,9 +204,13 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                         StartTime = UnixTimeStampToDateTime(int.Parse(item.GetAttribute("data-zonedgrouping-entry-unix").Substring(0, 10))),
                         MatchFormat = matchFormat[0].TextContent
                     };
-
-                    matchInfos.Add(match);
+                    //Team1.MatchInfo.Add(match);
+                    //Team2.MatchInfo.Add(match);
+                    //db.Entry(Team1).State = EntityState.Modified;
+                    //db.Entry(Team2).State = EntityState.Modified;
+                        matchInfos.Add(match);
                     db.MatchesInfo.Add(match);
+                    counter++;
                 }
                 else
                 {
@@ -256,7 +273,9 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                 .Where(m => m.Result == null && DateTime.Now > m.StartTime)
                 .Include(t => t.TeamsInfo).ToListAsync().Result;
             foreach (var item in matches)
+            {
                 db.Entry(item).Collection(m => m.TeamsInfo);
+            }
             //.ThenInclude();
             foreach (var match in matches)
             {
@@ -273,19 +292,34 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                     MatchResult matchResult = new MatchResult();
                     if (team1_score.InnerHtml.Contains("won"))
                     {
-                        matchResult.Winner = match.TeamsInfo.ToList()[0];
-                        matchResult.Loser = match.TeamsInfo.ToList()[1];
+                        if (team1_score.InnerHtml.Contains(match.TeamsInfo.ToList()[0].Name))
+                        {
+                            matchResult.Winner = match.TeamsInfo.ToList()[0];
+                            matchResult.Loser = match.TeamsInfo.ToList()[1];
+                        }
+                        else
+                        {
+                            matchResult.Loser = match.TeamsInfo.ToList()[0];
+                            matchResult.Winner = match.TeamsInfo.ToList()[1];
+                        }
                     }
                     else
                     {
-                        matchResult.MatchInfo = match;
-                        matchResult.Winner = match.TeamsInfo.ToList()[1];
-                        matchResult.Loser = match.TeamsInfo.ToList()[0];
+                        if (team2_score.InnerHtml.Contains(match.TeamsInfo.ToList()[0].Name))
+                        {
+                            matchResult.Winner = match.TeamsInfo.ToList()[0];
+                            matchResult.Loser = match.TeamsInfo.ToList()[1];
+                        }
+                        else
+                        {
+                            matchResult.Loser = match.TeamsInfo.ToList()[0];
+                            matchResult.Winner = match.TeamsInfo.ToList()[1];
+                        }
                     }
                     matchResult.MapScore = team1_score.LastElementChild.TextContent + "-"
                         + team2_score.LastElementChild.TextContent;
                     matchResult.MatchInfo = match;
-                    db.MatchResults.Add(matchResult);
+                        db.MatchResults.Add(matchResult);
                     //match.Result = matchResult;
                     //db.Entry(match).State = EntityState.Modified;
                 }
@@ -322,7 +356,6 @@ namespace CSGO_match_result_prediction_курсовая_практика_.Jobs
                         team2_chance += 1.5;
                     else if (team1_stats[i].WinPercentage >= 50)
                         team2_chance += 1 * 0.3;
-                    /////////////////////////
                     if (team1_stats[i].WinPercentage > team2_stats[i].WinPercentage
                     && team1_stats[i].MapPlayed > team2_stats[i].MapPlayed)
                         team1_chance += 0.2;
