@@ -6,42 +6,113 @@
 
 <h2>TeamDetails</h2>
 
-<div class="team_profile">
-    <h4>TeamInfo</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+<div class="teamProfile">
+    <div>
+        <h4>TeamInfo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LogoUrl)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.LogoUrl)
-        </dd>
-       
-    </dl>
-    <div class="map-statistics">
-        @foreach (var item in Model.Stats) {
-        <div class="map-statistics-container">
-            <div class="map-statistics-row">
-                <div class="map-statistics-row-map">
-                    <div class="map-statistics-row-map-mapname">
-                        @item.MapName;
+        </dl>
+        <div class="map-statistics">
+            @foreach (var item in Model.Stats)
+            {
+                if (item.MapPlayed > 0)
+                {
+                <div class="map-statistics-container" style="max-height: 40px">
+                    <div class="map-statistics-row">
+                        <div class="map-statistics-row-map">
+                            <img src="/img/@item.MapName.Trim(' ').ToLower().Insert(item.MapName.Length, ".png")" class="gtSmartphone-only">
+                            <div class="map-statistics-row-map-mapname">@item.MapName</div>
+                        </div>
+                        <div class="map-statistics-row-win-percentage">@item.WinPercentage%<i class="fa fa-caret-down"></i></div>
+                    </div>
+                    <div class="map-statistics-extended hidden">
+                        <div class="map-statistics-extended-highlights-container">
+                            <div class="map-statistics-extended-highlight-container">
+                                <div class="map-statistics-extended-sub-header">Biggest win on map</div>
+                                <a href="/stats/matches/mapstatsid/117570/sinners-vs-dignitas?contextIds=5422&amp;contextTypes=team" class="map-statistics-extended-highlight-box biggest-map">
+                                    <div class="biggest-map-team-container team1 text-ellipsis">
+                                        <div class="team-logo-container"><img alt="Dignitas" class="team-logo" srcset="https://img-cdn.hltv.org/teamlogo/w2EJ4p_IcYGMu0Cs2G4ZUn.png?ixlib=java-2.1.0&amp;w=100&amp;s=e285954f5def874e2ea44d1547339657 2x" title="Dignitas" src="https://img-cdn.hltv.org/teamlogo/w2EJ4p_IcYGMu0Cs2G4ZUn.png?ixlib=java-2.1.0&amp;w=50&amp;s=747bd21df637f066a412aaad3a30e4c0"></div>
+                                        Dignitas
+                                    </div>
+                                    <div class="biggest-map-score-container">
+                                        <div class="biggest-map-score team1 biggest-map-won">16</div>
+                                        <div class="biggest-map-score team2 biggest-map-lost">10</div>
+                                    </div>
+                                    <div class="biggest-map-team-container team2 text-ellipsis">
+                                        <div class="team-logo-container"><img alt="Sinners" class="team-logo" title="Sinners" src="https://img-cdn.hltv.org/teamlogo/9l_WdQSU9JsNHzpK-pwOG2.svg?ixlib=java-2.1.0&amp;s=af432c3ef61c0c843331cc0dc2fed1ed"></div>
+                                        Sinners
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="map-statistics-extended-highlight-container">
+                                <div class="map-statistics-extended-sub-header">Biggest loss on map</div>
+                                <a href="/stats/matches/mapstatsid/118873/dignitas-vs-havu?contextIds=5422&amp;contextTypes=team" class="map-statistics-extended-highlight-box biggest-map">
+                                    <div class="biggest-map-team-container team1 text-ellipsis">
+                                        <div class="team-logo-container"><img alt="Dignitas" class="team-logo" srcset="https://img-cdn.hltv.org/teamlogo/w2EJ4p_IcYGMu0Cs2G4ZUn.png?ixlib=java-2.1.0&amp;w=100&amp;s=e285954f5def874e2ea44d1547339657 2x" title="Dignitas" src="https://img-cdn.hltv.org/teamlogo/w2EJ4p_IcYGMu0Cs2G4ZUn.png?ixlib=java-2.1.0&amp;w=50&amp;s=747bd21df637f066a412aaad3a30e4c0"></div>
+                                        Dignitas
+                                    </div>
+                                    <div class="biggest-map-score-container">
+                                        <div class="biggest-map-score team1 biggest-map-lost">6</div>
+                                        <div class="biggest-map-score team2 biggest-map-won">16</div>
+                                    </div>
+                                    <div class="biggest-map-team-container team2 text-ellipsis">
+                                        <div class="team-logo-container"><img alt="HAVU" class="team-logo" title="HAVU" src="https://img-cdn.hltv.org/teamlogo/bGYa-QzoimP8JH5hcdXcu3.svg?ixlib=java-2.1.0&amp;s=70ceee130e1571052313c6f74c078aa3"></div>
+                                        HAVU
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="map-statistics-extended-stats">
+                            <div class="map-statistics-extended-sub-header">Win / draw / losses</div>
+                            <div class="map-statistics-extended-wdl">
+                                <div class="highlighted-stats-box">
+                                    <div class="highlighted-stat">
+                                        <div class="stat">3</div>
+                                        <div class="description">Win</div>
+                                    </div>
+                                    <div class="highlighted-stat">
+                                        <div class="stat">0</div>
+                                        <div class="description">Draws</div>
+                                    </div>
+                                    <div class="highlighted-stat">
+                                        <div class="stat">1</div>
+                                        <div class="description">Losses</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-statistics-extended-general-stats-container">
+                                <div class="map-statistics-extended-sub-header">General stats</div>
+                                <div class="map-statistics-extended-general-stats">
+                                    <div class="map-statistics-extended-general-stat">
+                                        <div>Round win% after getting first kill</div>
+                                        <div>67.4%</div>
+                                    </div>
+                                    <div class="map-statistics-extended-general-stat">
+                                        <div>Round win% after getting first death</div>
+                                        <div>40.4%</div>
+                                    </div>
+                                    <div class="map-statistics-extended-general-stat">
+                                        <div>Pistolround win%</div>
+                                        <div>62.5%</div>
+                                    </div>
+                                </div>
+                                <a href="/stats/teams/map/40/5422/dignitas?startDate=2021-02-24&amp;endDate=2021-05-24" class="moreButton">Stats history on Overpass</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="map-statistics-row-win-percentage">
-                    @item.WinPercentage%
-                </div>
-            </div>
+                }
+            }
         </div>
-        }
     </div>
 </div>
 <p>
